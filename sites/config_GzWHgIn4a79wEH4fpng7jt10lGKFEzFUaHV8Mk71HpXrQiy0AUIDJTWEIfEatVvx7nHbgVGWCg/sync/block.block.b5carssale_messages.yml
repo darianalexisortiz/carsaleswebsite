@@ -1,0 +1,22 @@
+uuid: 0924fb1d-0909-4e24-a600-266d96bf8381
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5carssale
+_core:
+  default_config_hash: '-0ZDRrTROixZ0c6o6uH7_xcaHV2DaGuBgZkXmQZu_Lw'
+id: b5carssale_messages
+theme: b5carssale
+region: content
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

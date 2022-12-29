@@ -1,5 +1,5 @@
 uuid: 2221df00-72cf-40f6-9cab-645ce8ee5b58
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -7,7 +7,9 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_meta_tags
     - field.field.node.article.field_tags
+    - field.field.node.article.field_yoast_seo
     - image.style.medium
     - node.type.article
   module:
@@ -51,8 +53,15 @@ content:
   links:
     weight: 100
     region: content
+  share_everywhere:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
 hidden:
   comment: true
   field_image: true
+  field_meta_tags: true
   field_tags: true
+  field_yoast_seo: true
   langcode: true

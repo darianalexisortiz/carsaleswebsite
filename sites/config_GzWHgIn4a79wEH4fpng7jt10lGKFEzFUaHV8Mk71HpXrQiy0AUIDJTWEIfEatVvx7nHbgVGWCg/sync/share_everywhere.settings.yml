@@ -1,0 +1,104 @@
+_core:
+  default_config_hash: GT1sVnQyCigncJnckY3EqwkakIGZlDEjYkLVpjv4RIQ
+langcode: es
+buttons:
+  facebook_like:
+    name: 'Facebook like'
+    enabled: 0
+  facebook_share:
+    name: 'Facebook share'
+    title: 'Share on Facebook'
+    enabled: 1
+    image: facebook-share.svg
+    weight: 0
+  twitter:
+    name: Twitter
+    title: 'Share on Twitter'
+    enabled: 1
+    image: twitter.svg
+    weight: 1
+  linkedin:
+    name: LinkedIn
+    title: 'Share on LinkedIn'
+    enabled: 1
+    image: linkedin.svg
+    weight: 2
+  messenger:
+    name: Messenger
+    title: 'Share via Messenger'
+    enabled: 1
+    image: messenger.svg
+    weight: 3
+  viber:
+    name: Viber
+    title: 'Share via Viber'
+    enabled: 0
+    image: viber.svg
+    weight: 4
+  whatsapp:
+    name: WhatsApp
+    title: 'Share via WhatsApp'
+    enabled: 1
+    image: whatsapp.svg
+    weight: 5
+  copy:
+    name: 'Copy URL'
+    title: 'Copy site URL'
+    enabled: 1
+    image: copy-url.svg
+    weight: 6
+share_icon:
+  image: share-icon.svg
+  alt: 'Share icon'
+title: 'Share Everywhere'
+display_title: 0
+style: share_everywhere
+include_css: include_css
+include_js: include_js
+collapsible: 0
+location: content
+alignment: left
+per_entity: 0
+content_types:
+  article: article
+  page: page
+  vehicle: vehicle
+  slider: '0'
+view_modes:
+  article:
+    full: full
+    rss: '0'
+    search_index: '0'
+    search_result: '0'
+    teaser: '0'
+    token: '0'
+  page:
+    full: full
+    rss: '0'
+    search_index: '0'
+    search_result: '0'
+    teaser: '0'
+    token: '0'
+  vehicle:
+    full: full
+    rss: '0'
+    search_index: '0'
+    search_result: '0'
+    teaser: '0'
+    token: '0'
+  slider:
+    full: full
+    rss: '0'
+    search_index: '0'
+    search_result: '0'
+    teaser: '0'
+    token: '0'
+product_types:
+  default: default
+product_view_modes:
+  default:
+    full: full
+restricted_pages:
+  pages: {  }
+  type: show
+weight: 10

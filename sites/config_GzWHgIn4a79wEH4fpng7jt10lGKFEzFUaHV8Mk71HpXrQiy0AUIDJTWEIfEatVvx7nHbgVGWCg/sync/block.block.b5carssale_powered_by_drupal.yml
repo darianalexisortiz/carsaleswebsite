@@ -1,0 +1,22 @@
+uuid: 88240907-bc45-4388-b3b8-a2e819ffee8b
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - b5carssale
+_core:
+  default_config_hash: I_L6ZqT7O3wc6ewRUmH45Y0Nr-HlLPMl3ahtfPKh2vk
+id: b5carssale_powered_by_drupal
+theme: b5carssale
+region: footer
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

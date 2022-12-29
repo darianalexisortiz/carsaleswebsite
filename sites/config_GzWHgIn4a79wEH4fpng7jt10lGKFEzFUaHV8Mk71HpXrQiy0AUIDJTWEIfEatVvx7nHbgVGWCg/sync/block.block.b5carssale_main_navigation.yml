@@ -1,0 +1,27 @@
+uuid: 485e6128-95b7-4fd8-8d2a-bfac21c4b6b6
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - b5carssale
+_core:
+  default_config_hash: MtAPRAdD1ScIbVXpmieJZseG0ZDk2pJmhj_4yvAfxEk
+id: b5carssale_main_navigation
+theme: b5carssale
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

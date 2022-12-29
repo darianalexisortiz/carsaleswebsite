@@ -1,5 +1,5 @@
 uuid: 310ebfb0-a30b-437a-a77f-299d9be59d16
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -18,14 +18,14 @@ settings:
   display_default: false
   uri_scheme: public
   default_image:
-    uuid: null
+    uuid: ''
     alt: ''
     title: ''
     width: null
     height: null
 module: image
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes:
   target_id:

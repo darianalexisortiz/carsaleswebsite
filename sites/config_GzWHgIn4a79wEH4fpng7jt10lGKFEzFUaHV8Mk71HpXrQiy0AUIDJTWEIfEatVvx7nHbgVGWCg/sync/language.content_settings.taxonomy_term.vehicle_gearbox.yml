@@ -1,0 +1,11 @@
+uuid: b9afbfe2-730f-4ca6-9e39-7346fd5d5a1d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.vehicle_gearbox
+id: taxonomy_term.vehicle_gearbox
+target_entity_type_id: taxonomy_term
+target_bundle: vehicle_gearbox
+default_langcode: site_default
+language_alterable: false

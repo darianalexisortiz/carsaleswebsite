@@ -1,5 +1,5 @@
 uuid: 1d9d7808-c70b-4a2b-b3f6-235cbac3e6f7
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -134,7 +134,7 @@ display:
           entity_type: user
           entity_field: status
           plugin_id: field
-          label: Status
+          label: Estado
           exclude: false
           alter:
             alter_text: false
@@ -466,8 +466,8 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
+            next: 'Siguiente >'
+            previous: '‹ Anterior'
             first: '« First'
             last: 'Last »'
           expose:
@@ -482,7 +482,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtro
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -600,7 +600,7 @@ display:
               administrator: '0'
           is_grouped: true
           group_info:
-            label: Status
+            label: Estado
             description: ''
             identifier: status
             optional: true
@@ -894,7 +894,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Page
+    display_title: Página
     display_plugin: page
     position: 1
     display_options:

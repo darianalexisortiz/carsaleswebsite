@@ -1,5 +1,5 @@
 uuid: 58de625d-0e6d-4390-9e79-96c9a919b719
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -155,7 +155,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'No content available.'
+          content: 'No hay contenido disponible.'
           tokenize: false
       sorts:
         changed:

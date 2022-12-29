@@ -1,0 +1,9 @@
+status: 1
+pattern: '[node:field_vehicle_brand] [node:field_vehicle_model] [node:field_vehicle_condition] [node:field_vehicle_fuel] [node:field_vehicle_year]'
+escape: false
+preserve_titles: false
+save: true
+chunk: 50
+dependencies:
+  config:
+    - node.type.vehicle

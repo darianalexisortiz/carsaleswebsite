@@ -1,0 +1,19 @@
+uuid: 7c3c6766-8336-4742-a322-25d48382db19
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vehicle_model
+    - node.type.vehicle
+id: node.vehicle.field_vehicle_model
+field_name: field_vehicle_model
+entity_type: node
+bundle: vehicle
+label: Modelo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

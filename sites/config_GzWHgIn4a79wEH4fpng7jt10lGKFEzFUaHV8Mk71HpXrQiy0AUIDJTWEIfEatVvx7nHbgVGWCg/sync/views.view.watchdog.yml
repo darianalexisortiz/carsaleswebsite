@@ -1,5 +1,5 @@
 uuid: fe82174e-d1f6-46f2-b430-518e4c3fb9c2
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -457,7 +457,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtro
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -695,7 +695,7 @@ display:
       tags: {  }
   page:
     id: page
-    display_title: Page
+    display_title: Página
     display_plugin: page
     position: 1
     display_options:

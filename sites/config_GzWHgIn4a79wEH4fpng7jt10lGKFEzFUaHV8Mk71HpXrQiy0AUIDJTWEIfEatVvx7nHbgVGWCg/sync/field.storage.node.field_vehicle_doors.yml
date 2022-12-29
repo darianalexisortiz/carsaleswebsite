@@ -1,0 +1,20 @@
+uuid: 733962b0-7282-4b84-99ca-0a4664c58782
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_vehicle_doors
+field_name: field_vehicle_doors
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: e9727cb2-7b1c-4e84-9b15-878fe02a6dfc
+langcode: es
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: fuel
+label: Fuel
+type: 'canonical_entities:taxonomy_term'
+pattern: '/combustible/[term:name]'
+selection_criteria:
+  fb6febfc-cd80-4b8a-87d7-c12414b59428:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: fb6febfc-cd80-4b8a-87d7-c12414b59428
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      vehicle_fuel: vehicle_fuel
+selection_logic: and
+weight: -5
+relationships: {  }

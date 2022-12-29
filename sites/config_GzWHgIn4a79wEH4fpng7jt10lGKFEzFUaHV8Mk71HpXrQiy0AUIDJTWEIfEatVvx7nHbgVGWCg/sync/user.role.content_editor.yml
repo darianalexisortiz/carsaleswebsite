@@ -1,10 +1,10 @@
 uuid: d8faa363-b707-4a3b-9b5b-9271150fea42
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
-    - node.type.article
     - node.type.page
+    - node.type.vehicle
     - taxonomy.vocabulary.tags
   module:
     - comment
@@ -15,34 +15,27 @@ dependencies:
     - system
     - taxonomy
     - toolbar
-    - tour
+    - yoast_seo
 _core:
   default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
 id: content_editor
-label: 'Content editor'
+label: 'Editor de contenido'
 weight: 2
 is_admin: false
 permissions:
-  - 'access administration pages'
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
   - 'access toolbar'
-  - 'access tour'
-  - 'administer url aliases'
-  - 'create article content'
-  - 'create page content'
   - 'create terms in tags'
   - 'create url aliases'
-  - 'delete article revisions'
-  - 'delete own article content'
-  - 'delete own page content'
-  - 'delete page revisions'
-  - 'edit own article content'
+  - 'create vehicle content'
+  - 'delete own vehicle content'
+  - 'delete vehicle revisions'
   - 'edit own comments'
   - 'edit own page content'
+  - 'edit own vehicle content'
   - 'edit terms in tags'
-  - 'revert all revisions'
-  - 'view all revisions'
+  - 'use yoast seo'
   - 'view own unpublished content'
   - 'view the administration theme'

@@ -1,5 +1,5 @@
 uuid: 51652c2c-c8c2-4600-a89c-83d7bc44305c
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -218,7 +218,7 @@ display:
           entity_type: comment
           entity_field: name
           plugin_id: field
-          label: Author
+          label: Autor
           exclude: false
           alter:
             alter_text: false
@@ -347,7 +347,7 @@ display:
           entity_type: comment
           entity_field: changed
           plugin_id: field
-          label: Updated
+          label: Actualizado
           exclude: false
           alter:
             alter_text: false
@@ -544,7 +544,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtro
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -1096,7 +1096,7 @@ display:
           entity_type: comment
           entity_field: name
           plugin_id: field
-          label: Author
+          label: Autor
           exclude: false
           alter:
             alter_text: false
@@ -1225,7 +1225,7 @@ display:
           entity_type: comment
           entity_field: changed
           plugin_id: field
-          label: Updated
+          label: Actualizado
           exclude: false
           alter:
             alter_text: false

@@ -1,0 +1,11 @@
+uuid: b22fb990-8e8c-4b88-b16f-8e2b2dbe33b9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.vehicle_brand
+id: taxonomy_term.vehicle_brand
+target_entity_type_id: taxonomy_term
+target_bundle: vehicle_brand
+default_langcode: site_default
+language_alterable: false

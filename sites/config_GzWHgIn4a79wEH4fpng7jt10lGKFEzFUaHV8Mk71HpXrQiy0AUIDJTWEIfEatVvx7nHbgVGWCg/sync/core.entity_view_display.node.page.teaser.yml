@@ -1,10 +1,12 @@
 uuid: a8bee212-a352-4447-b3a9-ac18a1bfacd0
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_yoast_seo
     - node.type.page
   module:
     - text
@@ -27,5 +29,12 @@ content:
   links:
     weight: 101
     region: content
+  share_everywhere:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
 hidden:
+  field_meta_tags: true
+  field_yoast_seo: true
   langcode: true

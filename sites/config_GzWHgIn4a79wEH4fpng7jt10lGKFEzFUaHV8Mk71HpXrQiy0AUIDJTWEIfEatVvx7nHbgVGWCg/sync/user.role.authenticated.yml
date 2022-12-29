@@ -1,5 +1,5 @@
 uuid: d6e75357-6b24-4863-866e-2736c5a36f44
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -8,23 +8,21 @@ dependencies:
     - comment
     - contact
     - filter
+    - google_analytics
     - media
-    - search
-    - shortcut
     - system
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
-label: 'Authenticated user'
+label: 'Usuario autenticado'
 weight: 1
 is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'opt-in or out of google analytics tracking'
   - 'post comments'
-  - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'view media'

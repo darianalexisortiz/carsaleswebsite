@@ -1,0 +1,29 @@
+uuid: 2dbb47cf-1973-4606-b75e-d6680d6cd8e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vehicle_fuel
+    - node.type.vehicle
+    - taxonomy.vocabulary.vehicle_fuel
+id: node.vehicle.field_vehicle_fuel
+field_name: field_vehicle_fuel
+entity_type: node
+bundle: vehicle
+label: Combustible
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      vehicle_fuel: vehicle_fuel
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

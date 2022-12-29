@@ -1,5 +1,5 @@
 uuid: e9522a53-a16a-4e40-acfe-310bb67d99c9
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -163,7 +163,7 @@ display:
           entity_type: block_content
           entity_field: changed
           plugin_id: field
-          label: Updated
+          label: Actualizado
           exclude: false
           alter:
             alter_text: false
@@ -268,8 +268,8 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
+            next: 'Siguiente >'
+            previous: '‹ Anterior'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -518,7 +518,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Page
+    display_title: Página
     display_plugin: page
     position: 1
     display_options:

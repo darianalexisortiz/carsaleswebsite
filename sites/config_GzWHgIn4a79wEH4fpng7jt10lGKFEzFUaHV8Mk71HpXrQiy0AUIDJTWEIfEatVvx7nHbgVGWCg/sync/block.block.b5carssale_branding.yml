@@ -1,0 +1,25 @@
+uuid: 2f0c919c-3432-4c8b-9952-61c03d377e79
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5carssale
+_core:
+  default_config_hash: _tV8R5fA_uWt0r17-hzftTVU7X7004yuqeeJ2AQZcAM
+id: b5carssale_branding
+theme: b5carssale
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

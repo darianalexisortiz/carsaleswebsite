@@ -1,0 +1,22 @@
+uuid: 704f4b0f-2092-49aa-9344-1f0c905bec07
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - b5carssale
+_core:
+  default_config_hash: Sqr9yNun3-sGJtJZNa2A-UEkzU6CepTCqPpF9DS180k
+id: b5carssale_breadcrumbs
+theme: b5carssale
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

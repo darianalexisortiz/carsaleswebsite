@@ -1,0 +1,23 @@
+uuid: c71b1711-01c8-496a-9ad4-d0eb8cc00d2f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vehicle_engine_size
+    - node.type.vehicle
+id: node.vehicle.field_vehicle_engine_size
+field_name: field_vehicle_engine_size
+entity_type: node
+bundle: vehicle
+label: 'Tamaño de motor'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 100
+  max: 4000
+  prefix: ''
+  suffix: cm3
+field_type: integer
