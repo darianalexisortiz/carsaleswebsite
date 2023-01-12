@@ -11,8 +11,6 @@ display:
         type:
           label: 'Tipo de contenido'
           separator: ', '
-        name:
-          label: Autor
         status:
           label: Estado
           settings:
@@ -43,9 +41,6 @@ display:
         title:
           expose:
             label: Título
-        type:
-          expose:
-            label: 'Tipo de contenido'
         status:
           expose:
             label: Estado
@@ -56,9 +51,6 @@ display:
                 title: Publicado
               2:
                 title: 'Sin publicar'
-        langcode:
-          expose:
-            label: Idioma
   page_1:
     display_title: Página
     display_options:

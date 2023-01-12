@@ -241,7 +241,7 @@ display:
           entity_type: user
           entity_field: created
           plugin_id: field
-          label: 'Member for'
+          label: 'Miembro hace '
           exclude: false
           alter:
             alter_text: false

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.vehicle.body
     - field.field.node.vehicle.field_image
+    - field.field.node.vehicle.field_meta_tags
     - field.field.node.vehicle.field_vehicle_brand
     - field.field.node.vehicle.field_vehicle_condition
     - field.field.node.vehicle.field_vehicle_doors
@@ -16,12 +17,15 @@ dependencies:
     - field.field.node.vehicle.field_vehicle_price
     - field.field.node.vehicle.field_vehicle_type
     - field.field.node.vehicle.field_vehicle_year
+    - field.field.node.vehicle.field_yoast_seo
     - image.style.thumbnail
     - node.type.vehicle
   module:
     - image_widget_crop
+    - metatag
     - text
     - yearonly
+    - yoast_seo
 id: node.vehicle.default
 targetEntityType: node
 bundle: vehicle
@@ -50,6 +54,14 @@ content:
       warn_multiple_usages: true
       show_crop_area: false
       show_default_crop: true
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 26
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_vehicle_brand:
     type: options_select
@@ -122,6 +134,13 @@ content:
     weight: 8
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 27
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   status:
     type: boolean_checkbox

@@ -13,4 +13,4 @@ settings:
   show_default_crop: true
   show_crop_area: false
   notify_apply: false
-  notify_update: true
+  notify_update: false

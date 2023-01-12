@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.vehicle.body
     - field.field.node.vehicle.field_image
+    - field.field.node.vehicle.field_meta_tags
     - field.field.node.vehicle.field_vehicle_brand
     - field.field.node.vehicle.field_vehicle_condition
     - field.field.node.vehicle.field_vehicle_doors
@@ -17,6 +18,7 @@ dependencies:
     - field.field.node.vehicle.field_vehicle_price
     - field.field.node.vehicle.field_vehicle_type
     - field.field.node.vehicle.field_vehicle_year
+    - field.field.node.vehicle.field_yoast_seo
     - image.style.crop_thumbnail
     - node.type.vehicle
   module:
@@ -86,11 +88,13 @@ content:
     region: content
 hidden:
   body: true
+  field_meta_tags: true
   field_vehicle_doors: true
   field_vehicle_gearbox: true
   field_vehicle_km: true
   field_vehicle_model: true
   field_vehicle_price: true
   field_vehicle_type: true
+  field_yoast_seo: true
   langcode: true
   links: true

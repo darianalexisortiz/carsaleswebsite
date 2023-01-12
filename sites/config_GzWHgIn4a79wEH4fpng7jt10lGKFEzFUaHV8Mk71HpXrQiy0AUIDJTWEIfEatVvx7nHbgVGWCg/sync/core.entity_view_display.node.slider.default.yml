@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.slider.field_media
-    - image.style.crop_thumbnail
+    - image.style.crop_slider
     - node.type.slider
   module:
     - slick
@@ -21,7 +21,7 @@ content:
       caption:
         title: '0'
         alt: '0'
-      optionset: default
+      optionset: slide
       class: ''
       id: ''
       image: ''
@@ -43,7 +43,7 @@ content:
       preload: true
       responsive_image_style: ''
       box_style: ''
-      image_style: crop_thumbnail
+      image_style: crop_slider
       media_switch: ''
       ratio: ''
       thumbnail_style: ''

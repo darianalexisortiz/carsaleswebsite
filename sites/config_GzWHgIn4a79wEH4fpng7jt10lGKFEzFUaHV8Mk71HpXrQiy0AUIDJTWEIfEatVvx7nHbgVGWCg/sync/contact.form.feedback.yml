@@ -10,5 +10,5 @@ recipients:
   - admin@dalesolucion.com
 reply: ''
 weight: 0
-message: 'Your message has been sent.'
+message: 'Tu mensaje ha sido enviado.'
 redirect: ''

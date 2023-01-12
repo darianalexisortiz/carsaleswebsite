@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-dev',
-        'version' => 'dev-dev',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '0609ff3ba107cf56aa40853f70c5bdcad99b7a4c',
+        'reference' => 'ee6e5f03a6e7feb422e823d4eeb6a890415e552c',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -539,12 +539,12 @@
             'dev_requirement' => false,
         ),
         'drupal/legacy-project' => array(
-            'pretty_version' => 'dev-dev',
-            'version' => 'dev-dev',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '0609ff3ba107cf56aa40853f70c5bdcad99b7a4c',
+            'reference' => 'ee6e5f03a6e7feb422e823d4eeb6a890415e552c',
             'dev_requirement' => false,
         ),
         'drupal/link_attributes' => array(
