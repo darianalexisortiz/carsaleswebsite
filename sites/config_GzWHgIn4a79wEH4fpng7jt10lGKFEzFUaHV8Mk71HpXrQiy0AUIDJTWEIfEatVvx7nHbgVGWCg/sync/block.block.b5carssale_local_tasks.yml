@@ -9,7 +9,7 @@ _core:
 id: b5carssale_local_tasks
 theme: b5carssale
 region: content
-weight: -6
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:

@@ -1,0 +1,25 @@
+uuid: 681524db-ea96-4f00-9b0d-15fb4ba1ae57
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c9081f0d-7d5a-42b4-80c5-1fe752968568'
+  module:
+    - block_content
+  theme:
+    - b5carssale
+id: datosdecontacto
+theme: b5carssale
+region: contact
+weight: -7
+provider: null
+plugin: 'block_content:c9081f0d-7d5a-42b4-80c5-1fe752968568'
+settings:
+  id: 'block_content:c9081f0d-7d5a-42b4-80c5-1fe752968568'
+  label: 'Datos de contacto'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

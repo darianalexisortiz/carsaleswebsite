@@ -12,7 +12,7 @@ dependencies:
 id: views_block__slider_block_slider
 theme: b5carssale
 region: content
-weight: -3
+weight: -4
 provider: null
 plugin: 'views_block:slider-block_slider'
 settings:

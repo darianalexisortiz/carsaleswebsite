@@ -16,7 +16,7 @@ id: node.vehicle.body
 field_name: body
 entity_type: node
 bundle: vehicle
-label: Descripción
+label: 'Más información'
 description: ''
 required: false
 translatable: true

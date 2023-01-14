@@ -81,7 +81,7 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-  share_everywhere:
+  links:
     settings: {  }
     third_party_settings: {  }
     weight: 6
@@ -97,4 +97,4 @@ hidden:
   field_vehicle_type: true
   field_yoast_seo: true
   langcode: true
-  links: true
+  share_everywhere: true

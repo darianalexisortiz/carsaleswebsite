@@ -41,6 +41,7 @@
         "drupal/share_everywhere": "^2.0",
         "drupal/slick": "^2.6",
         "drupal/slick_views": "^2.6",
+        "drupal/structure_sync": "^2.0",
         "drupal/twig_tweak": "^3.2",
         "drupal/webform": "^6.1",
         "drupal/xmlsitemap": "^1.4",

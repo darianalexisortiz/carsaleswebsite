@@ -10,12 +10,11 @@
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
-
 .bg-dark{
   .container-fluid{
     padding: 0 3rem !important;
   }
-  background-color: #1b2158!important;
+  background-color: $cyan!important;
   border-bottom: 8px #fff solid;
   min-height: 150px;
   a{
@@ -33,21 +32,42 @@
 .node--type-slider .slick img, .node--type-slider .slick iframe {
   width: 100%;
 }
-main{
-  margin-bottom: 80px;
-}
 footer{
   padding: 0 !important;
+  background: $gray-100;
+  text-align: center;
   p{
+    color: $blue;
     font-size: 0.8rem;
     margin: 1rem 0;
+    font-size: 1rem;
+    a {
+      color: $blue;
+      text-decoration: none;
+    }
   }
 }
 .block-system-main-block, footer .container-fluid {
   padding: 0 3rem !important;
 }
 
+.view-id-vehiculos{
+  .block-column{
+    display: flex;
+    align-items: stretch;
+    .grid__content{
+      padding: 20px;
+    }
+  }
+}
+
 .node--view-mode-teaser {
+  box-shadow: 5px 5px 11px -4px rgba(28,28,28,0.59);
+  -webkit-box-shadow: 5px 5px 11px -4px rgba(28,28,28,0.59);
+  -moz-box-shadow: 5px 5px 11px -4px rgba(28,28,28,0.59);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
   h2 {
     font-size: 1.5rem;
     margin: 10px 0;
@@ -68,6 +88,19 @@ footer{
     &::after{
       content: ', ';
       display: inline;
+    }
+  }
+  .node-readmore {
+    text-align: right;
+    font-size: 2rem;
+    font-weight: bold;
+    visibility: hidden;
+    display: block;
+    a::after {
+      visibility: visible;
+      font-family: 'bootstrap-icons';
+      content: "\F4FE";
+      color: $cyan;
     }
   }
 }
@@ -92,7 +125,7 @@ h1{
 .slick-arrow::before, .slick-arrow::after {
   color: #fff;
 }
-#edit-sort-by{
+.form-item-sort-by .form-select {
   border: 0;
   background: transparent;
   padding: 0;
@@ -126,4 +159,58 @@ h1{
 .menu--social-media .navbar-nav{
   display: flex;
   flex-direction: row;
+}
+
+.button--primary {
+ color: #fff;
+}
+
+.contact-blocks {
+  padding: 0 5rem !important;
+  h2 {
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+  }
+  background: $blue;
+  .block-webform-block{
+    margin-top: 0;
+    color: $white;
+    .form-control{
+      border-radius: 0;
+    }
+    .form-actions {
+      text-align: right;
+      .btn {
+        border-radius: 0;
+      }
+    }
+  }
+  .block-block-content{
+    ul{
+      margin: 38px 0 0 0;
+      padding: 0;
+      list-style: none;
+      li {
+        margin: 10px;
+      }
+    }
+    color: $white;
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+    img {
+      width: 30px;
+      height: auto;
+      margin: 0 10px 0 0;
+    }
+    iframe {
+      margin: 10px 10px 10px 50px;
+    }
+  }
+}
+.region-contact{
+  display: flex;
 }

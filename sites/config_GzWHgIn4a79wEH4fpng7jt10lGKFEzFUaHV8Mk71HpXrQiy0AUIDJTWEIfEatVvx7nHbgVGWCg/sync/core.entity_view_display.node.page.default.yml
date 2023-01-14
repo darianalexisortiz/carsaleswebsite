@@ -31,24 +31,20 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_yoast_seo:
     type: yoastseo_formatter
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 3
     region: content
   links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  share_everywhere:
     settings: {  }
     third_party_settings: {  }
     weight: 1
     region: content
 hidden:
   langcode: true
+  share_everywhere: true

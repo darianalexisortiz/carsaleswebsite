@@ -1,0 +1,25 @@
+uuid: bc27aca6-833d-4124-85d4-c0c3134a3913
+langcode: es
+status: true
+dependencies:
+  config:
+    - webform.webform.contact
+  module:
+    - webform
+  theme:
+    - b5carssale
+id: webform
+theme: b5carssale
+region: contact
+weight: -8
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: '0'
+  provider: webform
+  webform_id: contact
+  default_data: ''
+  redirect: false
+visibility: {  }
