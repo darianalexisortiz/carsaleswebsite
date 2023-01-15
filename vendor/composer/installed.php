@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '929e00a9a83985ceefc1482d9fe24afe5d42eede',
+        'reference' => 'ae2238cb1957a2186638bc1abb26653cb3860dc1',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -466,6 +466,15 @@
             'reference' => '2.1.3',
             'dev_requirement' => false,
         ),
+        'drupal/field_display_label' => array(
+            'pretty_version' => '1.3.0',
+            'version' => '1.3.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/field_display_label',
+            'aliases' => array(),
+            'reference' => '8.x-1.3',
+            'dev_requirement' => false,
+        ),
         'drupal/field_group' => array(
             'pretty_version' => '3.4.0',
             'version' => '3.4.0.0',
@@ -544,7 +553,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '929e00a9a83985ceefc1482d9fe24afe5d42eede',
+            'reference' => 'ae2238cb1957a2186638bc1abb26653cb3860dc1',
             'dev_requirement' => false,
         ),
         'drupal/link_attributes' => array(

@@ -4,3 +4,11 @@
  * @file
  * Cars sale Bootstrap 5 theme file.
  */
+
+function b5carssale_preprocess_field_group_html_element(array &$variables, $hook) {
+  if ($node = \Drupal::request()->attributes->get('node')) {
+    if ($node->getType() === 'vehicle') {
+      $variables['element']['title'] = $node->title->value;
+    }
+  }
+}

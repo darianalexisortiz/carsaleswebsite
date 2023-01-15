@@ -82,26 +82,29 @@
   {% if view_mode == 'teaser' %}
     <div{{ content_attributes.addClass('node__content') }}>
       {{ content.field_image.0 }}
-      {{ title_prefix }}
-      {% if label and not page %}
-        <h2{{ title_attributes }}>
-          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-        </h2>
-      {% endif %}
-      {{ title_suffix }}
-      {{ content|without('field_image') }}
+      <div class="content">
+        {{ title_prefix }}
+        {% if label and not page %}
+          <h2{{ title_attributes }}>
+            <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+          </h2>
+        {% endif %}
+        {{ title_suffix }}
+        {{ content|without('field_image') }}
+      </div>
     </div>
   {% else %}
   <div class="row">
-    <h2{{ title_attributes }}>
-      {{ label }}
-    </h2>
     <div class="col-md-9">
-    {{ content }}
+      <div class="content">
+        {{ content }}
+      </div>
     </div>
     <div class="col-md-3">
-    <h2>Consultar</h2>
-    {{ { '#type': 'webform', '#webform': 'contact', '#default_data': {'subject': 'Quiero mas información sobre [current-page:title]' } } }}
+    <div class="form">
+      <h2>Contactacta con nosotrostar</h2>
+      {{ { '#type': 'webform', '#webform': 'contact', '#default_data': {'subject': 'Quiero mas información sobre [current-page:title]' } } }}
+    </div>
     </div>
   <div>
   {% endif %}

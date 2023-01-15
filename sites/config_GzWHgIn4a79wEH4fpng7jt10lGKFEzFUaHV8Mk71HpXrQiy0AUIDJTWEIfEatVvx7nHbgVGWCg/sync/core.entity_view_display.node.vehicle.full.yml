@@ -1,8 +1,9 @@
-uuid: 848a16c0-6253-41d1-81d5-070fbe130797
+uuid: 2f0c2592-e5ba-4979-9324-cd9140669800
 langcode: es
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.vehicle.body
     - field.field.node.vehicle.field_image
     - field.field.node.vehicle.field_meta_tags
@@ -22,10 +23,12 @@ dependencies:
     - node.type.vehicle
   module:
     - field_group
+    - metatag
     - slick
     - text
     - user
     - yearonly
+    - yoast_seo
 third_party_settings:
   field_group:
     group_col1:
@@ -70,7 +73,6 @@ third_party_settings:
         speed: fast
     group_col2:
       children:
-        - group_title
         - field_vehicle_condition
         - field_vehicle_brand
         - field_vehicle_model
@@ -82,7 +84,6 @@ third_party_settings:
         - field_vehicle_type
         - field_vehicle_price
         - field_vehicle_engine_size
-        - body
       label: Col2
       parent_name: group_row1
       region: content
@@ -99,35 +100,17 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-    group_title:
-      children: {  }
-      label: Title
-      parent_name: group_col2
-      region: content
-      weight: 20
-      format_type: html_element
-      format_settings:
-        classes: ''
-        show_empty_fields: true
-        id: ''
-        element: h2
-        show_label: false
-        label_element: h3
-        label_element_classes: ''
-        attributes: ''
-        effect: none
-        speed: fast
-id: node.vehicle.default
+id: node.vehicle.full
 targetEntityType: node
 bundle: vehicle
-mode: default
+mode: full
 content:
   body:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 32
+    weight: 1
     region: content
   field_image:
     type: slick_image
@@ -181,13 +164,20 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 19
+    region: content
   field_vehicle_brand:
     type: entity_reference_label
     label: inline
     settings:
       link: false
     third_party_settings: {  }
-    weight: 22
+    weight: 7
     region: content
   field_vehicle_condition:
     type: entity_reference_label
@@ -195,7 +185,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 21
+    weight: 6
     region: content
   field_vehicle_doors:
     type: number_integer
@@ -204,7 +194,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 28
+    weight: 13
     region: content
   field_vehicle_engine_size:
     type: number_integer
@@ -213,7 +203,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 31
+    weight: 16
     region: content
   field_vehicle_fuel:
     type: entity_reference_label
@@ -221,7 +211,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 27
+    weight: 12
     region: content
   field_vehicle_gearbox:
     type: entity_reference_label
@@ -229,7 +219,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 26
+    weight: 11
     region: content
   field_vehicle_km:
     type: number_integer
@@ -238,7 +228,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 25
+    weight: 10
     region: content
   field_vehicle_model:
     type: string
@@ -246,7 +236,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 23
+    weight: 8
     region: content
   field_vehicle_price:
     type: number_decimal
@@ -257,7 +247,7 @@ content:
       scale: 2
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 30
+    weight: 15
     region: content
   field_vehicle_type:
     type: entity_reference_label
@@ -265,14 +255,21 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 29
+    weight: 14
     region: content
   field_vehicle_year:
     type: yearonly_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 24
+    weight: 9
+    region: content
+  field_yoast_seo:
+    type: yoastseo_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 20
     region: content
   share_everywhere:
     settings: {  }
@@ -280,7 +277,5 @@ content:
     weight: 1
     region: content
 hidden:
-  field_meta_tags: true
-  field_yoast_seo: true
   langcode: true
   links: true

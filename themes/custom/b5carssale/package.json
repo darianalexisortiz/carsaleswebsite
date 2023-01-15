@@ -2,5 +2,8 @@
   "dependencies": {
     "browser-sync": "^2.27.11",
     "sass": "^1.57.1"
+  },
+  "scripts": {
+    "browsersync" :"browser-sync start --port 32780 --proxy 'cars-sale-website.lndo.site' --files 'css/*'"
   }
 }

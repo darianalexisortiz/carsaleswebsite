@@ -117,10 +117,12 @@ set footer_classes = ' ' ~
     </div>
     <div class="post_content">
         {{ page.post_content }}
+      {% if page.contact %}
         <div class="contact-blocks">
-        <h2>Contacta con nosotros</h2>
-        {{ page.contact }}
+          <h2>Contacta con nosotros</h2>
+          {{ page.contact }}
         </div>
+      {% endif %}
     </div>
   </div>
 

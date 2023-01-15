@@ -5,6 +5,11 @@ dependencies:
   config:
     - field.storage.node.field_vehicle_engine_size
     - node.type.vehicle
+  module:
+    - field_display_label
+third_party_settings:
+  field_display_label:
+    display_label: Motor
 id: node.vehicle.field_vehicle_engine_size
 field_name: field_vehicle_engine_size
 entity_type: node

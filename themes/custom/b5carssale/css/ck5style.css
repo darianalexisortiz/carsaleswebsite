@@ -10993,7 +10993,7 @@ a > .ck-content code {
   overflow-y: auto;
 }
 .ck-content .bg-dark {
-  background-color: #3DBFF0 !important;
+  background-color: #1b2158 !important;
   border-bottom: 8px #fff solid;
   min-height: 150px;
 }
@@ -11039,7 +11039,7 @@ a > .ck-content code {
 .ck-content .view-id-vehiculos .block-column .grid__content {
   padding: 20px;
 }
-.ck-content .node--view-mode-teaser {
+.ck-content .node--type-vehicle.node--view-mode-teaser {
   box-shadow: 5px 5px 11px -4px rgba(28, 28, 28, 0.59);
   -webkit-box-shadow: 5px 5px 11px -4px rgba(28, 28, 28, 0.59);
   -moz-box-shadow: 5px 5px 11px -4px rgba(28, 28, 28, 0.59);
@@ -11047,43 +11047,116 @@ a > .ck-content code {
   flex-direction: column;
   padding: 10px;
 }
-.ck-content .node--view-mode-teaser h2, .ck-content .node--view-mode-teaser .h2 {
+.ck-content .node--type-vehicle.node--view-mode-teaser h2, .ck-content .node--type-vehicle.node--view-mode-teaser .h2 {
   font-size: 1.5rem;
-  margin: 10px 0;
+  margin: 1rem 0;
+  text-transform: uppercase;
 }
-.ck-content .node--view-mode-teaser a {
+.ck-content .node--type-vehicle.node--view-mode-teaser a {
   text-decoration: none;
 }
-.ck-content .node--view-mode-teaser .field--name-field-vehicle-fuel {
+.ck-content .node--type-vehicle.node--view-mode-teaser .content {
+  padding: 0 0.8rem;
+}
+.ck-content .node--type-vehicle.node--view-mode-teaser .field--name-field-vehicle-fuel {
   display: inline-block;
 }
-.ck-content .node--view-mode-teaser .field--name-field-vehicle-engine-size {
+.ck-content .node--type-vehicle.node--view-mode-teaser .field--name-field-vehicle-engine-size {
   display: inline-block;
 }
-.ck-content .node--view-mode-teaser .field--name-field-vehicle-engine-size .field__item {
+.ck-content .node--type-vehicle.node--view-mode-teaser .field--name-field-vehicle-engine-size .field__item {
   display: inline-block;
   padding-right: 0;
   margin-right: -3px;
+  margin-bottom: 2em;
 }
-.ck-content .node--view-mode-teaser .field--name-field-vehicle-engine-size::after {
+.ck-content .node--type-vehicle.node--view-mode-teaser .field--name-field-vehicle-engine-size::after {
   content: ", ";
   display: inline;
 }
-.ck-content .node--view-mode-teaser .node-readmore {
+.ck-content .node--type-vehicle.node--view-mode-teaser .node-readmore {
   text-align: right;
   font-size: 2rem;
   font-weight: bold;
   visibility: hidden;
   display: block;
 }
-.ck-content .node--view-mode-teaser .node-readmore a::after {
+.ck-content .node--type-vehicle.node--view-mode-teaser .node-readmore a::after {
   visibility: visible;
   font-family: "bootstrap-icons";
   content: "\f4fe";
   color: #3DBFF0;
 }
+.ck-content .page-node-type-vehicle .block-system-main-block {
+  padding: 0 !important;
+}
+.ck-content .node--type-vehicle.node--view-mode-full {
+  padding: 0 3rem;
+  background-color: #fff;
+}
+.ck-content .node--type-vehicle.node--view-mode-full .content {
+  padding: 3rem 0;
+}
+.ck-content .node--type-vehicle.node--view-mode-full .content h2, .ck-content .node--type-vehicle.node--view-mode-full .content .h2 {
+  color: #3DBFF0;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.ck-content .node--type-vehicle.node--view-mode-full .content .slick {
+  padding: 0.5rem;
+  box-shadow: 5px 5px 11px -4px rgba(28, 28, 28, 0.59);
+  -webkit-box-shadow: 5px 5px 11px -4px rgba(28, 28, 28, 0.59);
+  -moz-box-shadow: 5px 5px 11px -4px rgba(28, 28, 28, 0.59);
+}
+.ck-content .node--type-vehicle.node--view-mode-full .content .field--type-text-with-summary .field__label {
+  color: #3DBFF0;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+.ck-content .node--type-vehicle.node--view-mode-full .form {
+  background-color: #1b2158;
+  padding: 2rem;
+}
+.ck-content .node--type-vehicle.node--view-mode-full .form label {
+  color: #fff;
+  font-size: 0.8rem;
+}
+.ck-content .node--type-vehicle.node--view-mode-full .form input,
+.ck-content .node--type-vehicle.node--view-mode-full .form textarea {
+  border-radius: 0;
+  font-size: 0.8rem;
+}
+.ck-content .node--type-vehicle.node--view-mode-full .form h2, .ck-content .node--type-vehicle.node--view-mode-full .form .h2 {
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.ck-content .node--type-vehicle.node--view-mode-full .form h2::after, .ck-content .node--type-vehicle.node--view-mode-full .form .h2::after {
+  border-bottom: 1px solid #fff;
+  content: "";
+  width: 50%;
+  display: block;
+  text-align: center;
+  margin: 0.5em auto;
+}
 .ck-content h1, .ck-content .h1 {
   text-align: left !important;
+}
+.ck-content .view-display-id-page_vehicle .view-header h2, .ck-content .view-display-id-page_vehicle .view-header .h2 {
+  text-transform: uppercase;
+  color: #1b2158;
+}
+.ck-content .view-display-id-page_vehicle .view-header h2::after, .ck-content .view-display-id-page_vehicle .view-header .h2::after {
+  border-bottom: 1px solid #000;
+  content: "";
+  width: 20%;
+  display: block;
+  text-align: center;
+  margin: 0.5em auto;
 }
 .ck-content .block-webform-block {
   margin-top: 150px;
@@ -11102,25 +11175,32 @@ a > .ck-content code {
   border: 0;
   background: transparent;
   padding: 0;
+  margin-bottom: 0;
 }
 .ck-content .form-item-sort-by .form-select ul {
   list-style: none;
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 .ck-content .form-item-sort-by .form-select ul li {
-  margin-right: 8px;
   border: 1px solid #ccc;
   line-height: 1.5;
   border: 1px solid #ced4da;
   background-color: #fff;
   border-radius: 0.375rem;
+  flex: auto;
+  margin-right: 0.5em;
+}
+.ck-content .form-item-sort-by .form-select ul li:last-child {
+  margin-right: 0;
 }
 .ck-content .form-item-sort-by .form-select ul li a {
   text-decoration: none;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   display: block;
+  color: #000;
 }
 .ck-content .form-item-sort-by .form-select .bef-link--selected {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
@@ -11139,11 +11219,19 @@ a > .ck-content code {
   padding: 0 5rem !important;
   background: #1b2158;
 }
-.ck-content .contact-blocks h2, .ck-content .contact-blocks .h2 {
+.ck-content .contact-blocks > h2, .ck-content .contact-blocks > .h2 {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  padding: 20px;
+  padding: 1em;
+}
+.ck-content .contact-blocks > h2::after, .ck-content .contact-blocks > .h2::after {
+  border-bottom: 1px solid #fff;
+  content: "";
+  width: 20%;
+  display: block;
+  text-align: center;
+  margin: 0.5em auto;
 }
 .ck-content .contact-blocks .block-webform-block {
   margin-top: 0;
@@ -11183,6 +11271,25 @@ a > .ck-content code {
 }
 .ck-content .region-contact {
   display: flex;
+}
+.ck-content .block-views-exposed-filter-blockvehiculos-page-vehicle {
+  padding: 0 3rem;
+  background-color: #3DBFF0;
+}
+.ck-content .block-views-exposed-filter-blockvehiculos-page-vehicle label {
+  color: #fff;
+  margin-bottom: 12px;
+}
+.ck-content .block-views-exposed-filter-blockvehiculos-page-vehicle input {
+  margin: 0 10px;
+}
+.ck-content .block-views-exposed-filter-blockvehiculos-page-vehicle .form--inline {
+  display: flex;
+  justify-content: space-around;
+}
+.ck-content .block-views-exposed-filter-blockvehiculos-page-vehicle .form--inline > .form-item {
+  float: none;
+  flex: auto;
 }
 
 /*# sourceMappingURL=ck5style.css.map */
