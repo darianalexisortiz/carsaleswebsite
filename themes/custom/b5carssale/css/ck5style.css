@@ -11271,6 +11271,12 @@ a > .ck-content code {
 }
 .ck-content .region-contact {
   display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .ck-content .region-contact {
+    flex-direction: row;
+  }
 }
 .ck-content .block-views-exposed-filter-blockvehiculos-page-vehicle {
   padding: 0 3rem;

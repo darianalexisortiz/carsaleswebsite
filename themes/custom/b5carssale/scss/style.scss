@@ -306,6 +306,11 @@ h1{
 }
 .region-contact {
   display: flex;
+  flex-direction: column;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+
 }
 
 .block-views-exposed-filter-blockvehiculos-page-vehicle {

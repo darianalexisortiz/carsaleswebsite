@@ -12102,6 +12102,12 @@ h1, .h1 {
 
 .region-contact {
   display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .region-contact {
+    flex-direction: row;
+  }
 }
 
 .block-views-exposed-filter-blockvehiculos-page-vehicle {
