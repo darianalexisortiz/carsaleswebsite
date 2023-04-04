@@ -1,8 +1,0 @@
-uuid: 13032733-1bdb-47f0-83a8-f6d9e06fd954
-langcode: es
-status: true
-dependencies: {  }
-name: 'Vehicle brand'
-vid: vehicle_brand
-description: ''
-weight: 0

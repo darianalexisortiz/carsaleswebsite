@@ -1,5 +1,90 @@
 {
+  /*     "eslint.nodePath": "/home/dalexiso/.nvm/versions/node/v16.15.1/lib/node_modules/eslint-config-airbnb-bundle/node_modules/eslint", */ "eslint.alwaysShowStatus": true,
+  "eslint.debug": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.packageManager": "yarn",
+  // Place your settings in this file to overwrite the default settings
+  "breadcrumbs.enabled": true,
+  "css.validate": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.tabSize": 2,
+  "editor.autoIndent": "none",
+  "editor.insertSpaces": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.wordWrapColumn": 80,
+  "editor.wordWrap": "off",
+  "editor.detectIndentation": true,
+  "editor.rulers": [
+    80
+  ],
+  "files.associations": {
+    "*.inc": "php",
+    "*.module": "php",
+    "*.install": "php",
+    "*.theme": "php",
+    "*.tpl.php": "php",
+    "*.test": "php",
+    "*.php": "php",
+    "*.info": "ini",
+    "*.html": "twig",
+  },
+  "emmet.includeLanguages": {
+    "twig": "html"
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "html.format.enable": true,
+  "html.format.wrapLineLength": 80,
+  "telemetry.enableTelemetry": false,
+  /* Empty Indent */
+  "emptyIndent.removeIndent": true,
+  "emptyIndent.highlightIndent": false,
+  "emptyIndent.highlightColor": "rgba(246,36,89,0.6)",
+  /* PHPCS */
+  "phpcs.standard": "Drupal,DrupalPractice",
+  /*"phpcs.executablePath": "${workspaceRoot}/vendor/bin/phpcs",*/
+  "phpcs.extensions": "php,module,inc,install,test,profile,theme",
+  /* php-cs-fixer */
+  /*"php-cs-fixer.executablePath": "/home/dalexiso/.config/composer/vendor/bin/php-cs-fixer",*/
+  "phpcbf.enable": true,
+  /* "phpcbf.standard": "${workspaceRoot}/app/vendor/drupal/coder/coder_sniffer/Drupal/ruleset.xml", */
+  "phpcbf.standard": "Drupal,DrupalPractice",
+  /* "phpcbf.extensions": "php,module,inc,install,test,profile,theme", */
+  "phpcbf.executablePath": "/home/dalexiso/.config/composer/vendor/bin/phpcbf",
+  /* PHP validation */
+  "php.validate.enable": true,
+  "php.validate.executablePath": "/usr/bin/php",
+  "php.validate.run": "onType",
+  /* Crane php intellisense */
+  "crane.showStatusBarBugReportLink": false,
+  /* Ignore some D8 paths */
+  "crane.ignoredPaths": [
+    "sites/default/files/*",
+    "vendor/*",
+    "core/themes/*",
+    "core/tests/*",
+    "core/scripts/*",
+    "core/profiles/*",
+    "core/misc/*",
+    "core/assets/vendor/*",
+    "themes/*",
+    "sites/*"
+  ],
+  "php.suggest.basic": false,
+  // PHP IntelliSense only:
+  "php.executablePath": "/usr/bin/php",
+  // Intelephense and Drupal >8 only. This should be set to the path to core/index.php.
+  //"intelephense.environment.documentRoot": "${workspaceRoot}/web/core/index.php",
+  "php-docblocker.gap": true,
+  "php-docblocker.useShortNames": true,
+  "composer.enabled": true,
+  //"composer.executablePath": ".vscode/lando-composer-wrapper.sh",
+  "phpcbf.onsave": true,
   "workbench.colorCustomizations": {
+
     "activityBarBadge.background": "#7CB342",
     "activityBar.activeBorder": "#7CB342",
     "list.activeSelectionForeground": "#7CB342",
@@ -23,8 +108,9 @@
     "editor.findMatchBorder": "#7CB342",
     "selection.background": "#7CB34240",
     "statusBarItem.remoteBackground": "#7CB342",
-    "activityBar.background": "#3C2737",
-    "titleBar.activeBackground": "#53374D",
-    "titleBar.activeForeground": "#FCFAFB"
-  }
+    "activityBar.background": "#0600A3",
+    "titleBar.activeBackground": "#0800E5",
+    "titleBar.activeForeground": "#FCFCFF"
+  },
+  "materialTheme.accent": "Lime",
 }

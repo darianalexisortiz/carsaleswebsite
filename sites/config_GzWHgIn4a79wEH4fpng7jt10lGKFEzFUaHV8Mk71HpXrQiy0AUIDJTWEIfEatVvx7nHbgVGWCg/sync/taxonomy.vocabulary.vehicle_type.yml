@@ -1,8 +1,0 @@
-uuid: b2ba690c-7e65-480e-b004-d81222ad984e
-langcode: es
-status: true
-dependencies: {  }
-name: 'Vehicle type'
-vid: vehicle_type
-description: ''
-weight: 0

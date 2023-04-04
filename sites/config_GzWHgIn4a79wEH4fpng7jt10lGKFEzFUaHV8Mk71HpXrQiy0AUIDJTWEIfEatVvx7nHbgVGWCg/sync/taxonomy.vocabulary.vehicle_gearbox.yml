@@ -1,8 +1,0 @@
-uuid: f3a8e72c-3ec4-4d55-9f35-d51c3972e330
-langcode: es
-status: true
-dependencies: {  }
-name: 'Vehicle gearbox'
-vid: vehicle_gearbox
-description: ''
-weight: 0

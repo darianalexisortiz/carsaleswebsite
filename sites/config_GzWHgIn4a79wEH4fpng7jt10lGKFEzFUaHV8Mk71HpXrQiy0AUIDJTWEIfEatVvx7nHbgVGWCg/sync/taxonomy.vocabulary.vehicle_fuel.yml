@@ -1,8 +1,0 @@
-uuid: 0521452f-f6e1-4e3f-81bb-d1ef5822ff4d
-langcode: es
-status: true
-dependencies: {  }
-name: 'Vehicle fuel'
-vid: vehicle_fuel
-description: ''
-weight: 0

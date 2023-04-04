@@ -15,7 +15,7 @@
 # Generally you should only ignore the root vendor directory. It's important
 # that core/assets/vendor and any other vendor directories within contrib or
 # custom module, theme, etc., are not ignored unless you purposely do so.
-#/vendor/
+/vendor/
 
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
@@ -25,7 +25,7 @@ sites/*/services*.yml
 sites/*/files
 sites/*/private
 
-# Ignore SimpleTest multi-site environment.
+# Ignore multi-site test environment.
 sites/simpletest
 
 # If you prefer to store your .gitignore file in the sites/ folder, comment
@@ -38,6 +38,8 @@ sites/simpletest
 # */files
 # */private
 
-# Ignore SimpleTest multi-site environment.
+# Ignore multi-site test environment.
 # simpletest
-node_modules
+
+.lando.yml
+.vscode
