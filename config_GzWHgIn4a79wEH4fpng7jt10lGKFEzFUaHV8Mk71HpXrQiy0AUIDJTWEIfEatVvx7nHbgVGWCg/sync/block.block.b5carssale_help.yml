@@ -1,0 +1,22 @@
+uuid: c41ac49f-44fd-478a-96a0-05cbf98086bf
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - b5carssale
+_core:
+  default_config_hash: 3CyubO35-vBTOEmeLfblLj69R1ysb8Akd549Lfvkpiw
+id: b5carssale_help
+theme: b5carssale
+region: content
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

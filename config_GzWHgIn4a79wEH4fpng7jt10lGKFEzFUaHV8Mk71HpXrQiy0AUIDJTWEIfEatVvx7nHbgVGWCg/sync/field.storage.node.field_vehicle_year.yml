@@ -1,0 +1,19 @@
+uuid: 37ac10a5-85f0-47c5-8489-fcb5ec46721b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - yearonly
+id: node.field_vehicle_year
+field_name: field_vehicle_year
+entity_type: node
+type: yearonly
+settings: {  }
+module: yearonly
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

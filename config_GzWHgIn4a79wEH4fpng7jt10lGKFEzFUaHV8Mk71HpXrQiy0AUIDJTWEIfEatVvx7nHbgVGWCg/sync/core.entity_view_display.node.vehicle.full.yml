@@ -1,0 +1,281 @@
+uuid: 2f0c2592-e5ba-4979-9324-cd9140669800
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.vehicle.body
+    - field.field.node.vehicle.field_image
+    - field.field.node.vehicle.field_meta_tags
+    - field.field.node.vehicle.field_vehicle_brand
+    - field.field.node.vehicle.field_vehicle_condition
+    - field.field.node.vehicle.field_vehicle_doors
+    - field.field.node.vehicle.field_vehicle_engine_size
+    - field.field.node.vehicle.field_vehicle_fuel
+    - field.field.node.vehicle.field_vehicle_gearbox
+    - field.field.node.vehicle.field_vehicle_km
+    - field.field.node.vehicle.field_vehicle_model
+    - field.field.node.vehicle.field_vehicle_price
+    - field.field.node.vehicle.field_vehicle_type
+    - field.field.node.vehicle.field_vehicle_year
+    - field.field.node.vehicle.field_yoast_seo
+    - image.style.crop_thumbnail
+    - node.type.vehicle
+  module:
+    - field_group
+    - metatag
+    - slick
+    - text
+    - user
+    - yearonly
+    - yoast_seo
+third_party_settings:
+  field_group:
+    group_col1:
+      children:
+        - field_image
+        - share_everywhere
+      label: Col1
+      parent_name: group_row1
+      region: content
+      weight: 17
+      format_type: html_element
+      format_settings:
+        classes: col-md-8
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_row1:
+      children:
+        - group_col1
+        - group_col2
+      label: Row1
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: row
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_col2:
+      children:
+        - field_vehicle_condition
+        - field_vehicle_brand
+        - field_vehicle_model
+        - field_vehicle_year
+        - field_vehicle_km
+        - field_vehicle_gearbox
+        - field_vehicle_fuel
+        - field_vehicle_doors
+        - field_vehicle_type
+        - field_vehicle_price
+        - field_vehicle_engine_size
+      label: Col2
+      parent_name: group_row1
+      region: content
+      weight: 18
+      format_type: html_element
+      format_settings:
+        classes: col-md-4
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.vehicle.full
+targetEntityType: node
+bundle: vehicle
+mode: full
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: slick_image
+    label: hidden
+    settings:
+      caption:
+        title: '0'
+        alt: '0'
+      optionset: default
+      layout: ''
+      view_mode: ''
+      cache: 0
+      skin: default
+      lazy: ''
+      style: column
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      loading: ''
+      preload: false
+      responsive_image_style: ''
+      box_style: ''
+      image_style: crop_thumbnail
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: crop_thumbnail
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
+      skin_arrows: ''
+      skin_dots: ''
+      use_theme_field: false
+      preserve_keys: false
+      visible_items: null
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_vehicle_brand:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_vehicle_condition:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_vehicle_doors:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_vehicle_engine_size:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_vehicle_fuel:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_vehicle_gearbox:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_vehicle_km:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_vehicle_model:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_vehicle_price:
+    type: number_decimal
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_vehicle_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_vehicle_year:
+    type: yearonly_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_yoast_seo:
+    type: yoastseo_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  share_everywhere:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  links: true

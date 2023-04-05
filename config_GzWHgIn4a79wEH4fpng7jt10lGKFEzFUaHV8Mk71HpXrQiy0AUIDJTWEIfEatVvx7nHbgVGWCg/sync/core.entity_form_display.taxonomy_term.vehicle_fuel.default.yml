@@ -1,0 +1,37 @@
+uuid: f774c6b3-5eac-49e2-9c8a-f268a50651b9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.vehicle_fuel
+  module:
+    - path
+id: taxonomy_term.vehicle_fuel.default
+targetEntityType: taxonomy_term
+bundle: vehicle_fuel
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  description: true
+  langcode: true

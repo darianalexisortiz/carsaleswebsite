@@ -1,0 +1,25 @@
+uuid: 0f7225dc-5336-45f3-b4f9-52f77e0df30b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bf61e661-502e-4e98-a0a3-a75846536cbc'
+  module:
+    - block_content
+  theme:
+    - b5carssale
+id: footer
+theme: b5carssale
+region: footer
+weight: -10
+provider: null
+plugin: 'block_content:bf61e661-502e-4e98-a0a3-a75846536cbc'
+settings:
+  id: 'block_content:bf61e661-502e-4e98-a0a3-a75846536cbc'
+  label: Footer
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

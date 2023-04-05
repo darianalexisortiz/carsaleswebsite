@@ -1,0 +1,8 @@
+uuid: 754b368a-5018-497d-b07a-6c9bfb43f5e6
+langcode: es
+status: true
+dependencies: {  }
+name: 'Vehicle condition'
+vid: vehicle_condition
+description: ''
+weight: 0

@@ -1,0 +1,25 @@
+uuid: f1623a4e-1768-499c-88ee-ff04ab03cd25
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - b5carssale
+id: navegacionprincipal
+theme: b5carssale
+region: footer_menu
+weight: -10
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegación principal'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

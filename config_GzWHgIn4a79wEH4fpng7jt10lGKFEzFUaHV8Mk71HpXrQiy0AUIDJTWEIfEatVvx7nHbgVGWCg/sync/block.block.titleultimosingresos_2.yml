@@ -1,0 +1,30 @@
+uuid: 14575026-3dbf-4d0b-935c-54bd9c9a1f9a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d6292373-6071-4b2a-a20c-3cb1eae5910f'
+  module:
+    - block_content
+    - system
+  theme:
+    - b5carssale
+id: titleultimosingresos_2
+theme: b5carssale
+region: post_content
+weight: -11
+provider: null
+plugin: 'block_content:d6292373-6071-4b2a-a20c-3cb1eae5910f'
+settings:
+  id: 'block_content:d6292373-6071-4b2a-a20c-3cb1eae5910f'
+  label: 'Title - Últimos ingresos'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /nosotros

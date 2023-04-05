@@ -810,6 +810,8 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
+$settings['config_sync_directory'] = '../config_GzWHgIn4a79wEH4fpng7jt10lGKFEzFUaHV8Mk71HpXrQiy0AUIDJTWEIfEatVvx7nHbgVGWCg/sync';
+
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }

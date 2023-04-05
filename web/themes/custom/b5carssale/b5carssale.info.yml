@@ -1,7 +1,7 @@
 name: 'Cars sale Bootstrap 5'
 type: theme
 description: 'Cars sale Bootstrap 5 subtheme based on Bootstrap 5 theme.'
-core_version_requirement: ^9.2
+core_version_requirement: ^9.2 || ^10
 'base theme': bootstrap5
 logo: 'logo.png'
 libraries:
@@ -23,4 +23,5 @@ regions:
   contact: 'Contact'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
+  footer_menu: Footer menu
   footer: Footer

@@ -1,0 +1,544 @@
+uuid: 4466a7dd-cef8-44a0-a7bb-7a5850784f51
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.vehicle
+    - system.menu.admin
+    - taxonomy.vocabulary.vehicle_brand
+    - taxonomy.vocabulary.vehicle_condition
+    - taxonomy.vocabulary.vehicle_type
+  module:
+    - better_exposed_filters
+    - blazy
+    - node
+    - taxonomy
+    - user
+id: vehiculos
+label: Vehiculos
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Default
+    display_plugin: default
+    position: 0
+    display_options:
+      title: Vehiculos
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            trim: false
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« Primero'
+            last: 'Último »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Aplicar
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Ordenar por'
+          expose_sort_order: false
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Seleccione cualquier filtro y pulse Aplicar para ver los resultados'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              autosubmit: true
+              autosubmit_exclude_textfield: true
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: true
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Opciones avanzadas'
+              secondary_open: false
+              reset_button_always_show: false
+            sort:
+              plugin_id: bef_links
+              advanced:
+                combine: false
+                combine_rewrite: ''
+                reset: false
+                reset_label: Reiniciar
+                collapsible: false
+                collapsible_label: 'Opciones de ordenación'
+                is_secondary: false
+            filter:
+              field_vehicle_condition_target_id:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              field_vehicle_brand_target_id:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              field_vehicle_type_target_id:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'No se encuentran resultados con esta busqueda.'
+            format: basic_html
+          tokenize: false
+      sorts:
+        created_1:
+          id: created_1
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: ASC
+          expose:
+            label: 'Fecha de entrada'
+            field_identifier: fecha_de_entrada
+          exposed: true
+          granularity: second
+        field_vehicle_year_value:
+          id: field_vehicle_year_value
+          table: node__field_vehicle_year
+          field: field_vehicle_year_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: Año
+            field_identifier: year
+          exposed: true
+        field_vehicle_km_value:
+          id: field_vehicle_km_value
+          table: node__field_vehicle_km
+          field: field_vehicle_km_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: Kilómetros
+            field_identifier: kilometros
+          exposed: true
+        field_vehicle_price_value:
+          id: field_vehicle_price_value
+          table: node__field_vehicle_price
+          field: field_vehicle_price_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: Precio
+            field_identifier: precio
+          exposed: true
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            vehicle: vehicle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_vehicle_condition_target_id:
+          id: field_vehicle_condition_target_id
+          table: node__field_vehicle_condition
+          field: field_vehicle_condition_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_vehicle_condition_target_id_op
+            label: Condición
+            description: ''
+            use_operator: false
+            operator: field_vehicle_condition_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: condicion
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: vehicle_condition
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_vehicle_brand_target_id:
+          id: field_vehicle_brand_target_id
+          table: node__field_vehicle_brand
+          field: field_vehicle_brand_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_vehicle_brand_target_id_op
+            label: Marca
+            description: ''
+            use_operator: false
+            operator: field_vehicle_brand_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: marca
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: vehicle_brand
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_vehicle_type_target_id:
+          id: field_vehicle_type_target_id
+          table: node__field_vehicle_type
+          field: field_vehicle_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_vehicle_type_target_id_op
+            label: Tipo
+            description: ''
+            use_operator: false
+            operator: field_vehicle_type_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: tipo
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: vehicle_type
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      style:
+        type: blazy
+        options:
+          style: nativegrid
+          grid: '3'
+          grid_medium: '2'
+          grid_small: '1'
+      row:
+        type: 'entity:node'
+        options:
+          view_mode: teaser
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      use_ajax: false
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'url.query_args:sort_by'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_vehicle:
+    id: block_vehicle
+    display_title: 'Block Vehiculos'
+    display_plugin: block
+    position: 2
+    display_options:
+      sorts:
+        created_1:
+          id: created_1
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: ASC
+          expose:
+            label: 'Fecha de entrada'
+            field_identifier: fecha_de_entrada
+          exposed: false
+          granularity: second
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            vehicle: vehicle
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        sorts: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_vehicle:
+    id: page_vehicle
+    display_title: Page
+    display_plugin: page
+    position: 1
+    display_options:
+      exposed_block: true
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      path: vehiculos
+      menu:
+        type: normal
+        title: Vehiculos
+        menu_name: admin
+        parent: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'url.query_args:sort_by'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }

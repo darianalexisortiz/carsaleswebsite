@@ -1,0 +1,20 @@
+uuid: a8620b8a-0b4c-4c37-b3dc-6eff5a56cac3
+langcode: es
+status: true
+dependencies:
+  theme:
+    - b5carssale
+_core:
+  default_config_hash: rbKqjrQsNCo1B2VcH4LNLgHESl9ZSVhe1aEnMqAy_oo
+id: b5carssale_local_actions
+theme: b5carssale
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

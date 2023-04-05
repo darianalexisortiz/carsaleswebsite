@@ -1,0 +1,29 @@
+uuid: e83e7438-142f-4dbe-b00b-1ffd0da8dc46
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.vehiculos
+  module:
+    - system
+    - views
+  theme:
+    - b5carssale
+id: views_block__vehiculos_block_vehicle
+theme: b5carssale
+region: post_content
+weight: -10
+provider: null
+plugin: 'views_block:vehiculos-block_vehicle'
+settings:
+  id: 'views_block:vehiculos-block_vehicle'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /nosotros

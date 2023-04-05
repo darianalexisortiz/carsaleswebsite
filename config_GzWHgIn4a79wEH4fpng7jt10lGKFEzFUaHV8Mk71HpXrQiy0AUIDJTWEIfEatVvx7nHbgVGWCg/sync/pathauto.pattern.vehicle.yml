@@ -1,0 +1,22 @@
+uuid: 17c81fb6-83fb-4c1d-b2e7-bb51d7a4db8e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: vehicle
+label: Vehicle
+type: 'canonical_entities:node'
+pattern: 'vehiculo/[node:title]'
+selection_criteria:
+  1a723b99-73b8-4f54-a758-b25a98f500eb:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 1a723b99-73b8-4f54-a758-b25a98f500eb
+    context_mapping:
+      node: node
+    bundles:
+      vehicle: vehicle
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,22 @@
+uuid: 49b81cb0-9c0c-4c88-af4d-f70027835b85
+langcode: es
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: brand
+label: Brand
+type: 'canonical_entities:taxonomy_term'
+pattern: '/marca/[term:name]'
+selection_criteria:
+  f81a4432-32ca-4839-a389-d2e255d376b9:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: f81a4432-32ca-4839-a389-d2e255d376b9
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      vehicle_brand: vehicle_brand
+selection_logic: and
+weight: -5
+relationships: {  }

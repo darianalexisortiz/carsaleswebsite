@@ -130,6 +130,9 @@ set footer_classes = ' ' ~
 
 {% if page.footer %}
 <footer class="mt-auto {{ footer_classes }}">
+  <div class="menu">
+    {{ page.footer_menu }}
+  </div>
   <div class="{{ b5_top_container }}">
     {{ page.footer }}
   </div>

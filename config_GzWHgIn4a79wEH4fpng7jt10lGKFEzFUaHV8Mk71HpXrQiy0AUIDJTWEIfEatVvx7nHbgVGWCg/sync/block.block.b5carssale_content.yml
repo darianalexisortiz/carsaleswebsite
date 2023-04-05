@@ -1,0 +1,26 @@
+uuid: 375321c8-2a79-4393-9b33-32ecf6ee13ec
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5carssale
+_core:
+  default_config_hash: UyQxiDvai0X1asCPvgiRQ9BiLvbCuUpOexd76dBZqP0
+id: b5carssale_content
+theme: b5carssale
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: ''

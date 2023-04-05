@@ -1,0 +1,25 @@
+uuid: 36c66dd5-c1f2-4c55-8a5d-841230f01d36
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.social-media
+  module:
+    - system
+  theme:
+    - b5carssale
+id: redessociales_2
+theme: b5carssale
+region: footer_menu
+weight: -9
+provider: null
+plugin: 'system_menu_block:social-media'
+settings:
+  id: 'system_menu_block:social-media'
+  label: 'Redes sociales'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

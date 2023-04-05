@@ -10,6 +10,13 @@
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
+body{
+  overflow-x: hidden;
+}
+h1 {
+  color: #1b2158;
+  text-align: center;
+}
 .bg-dark{
   .container-fluid{
     padding: 0 3rem !important;
@@ -51,13 +58,21 @@ footer{
   padding: 0 3rem !important;
 }
 
+.blazy--view--vehiculos-block-block-vehicle{
+  grid-auto-rows: 1fr
+}
+
 .view-id-vehiculos{
   .block-column{
     display: flex;
     align-items: stretch;
-    .grid__content{
-      padding: 20px;
-    }
+  }
+  .grid__content {
+    padding: 10px 20px;
+    margin: 10px;
+  }
+  .view-content{
+    background: #fff;
   }
 }
 
@@ -72,6 +87,7 @@ footer{
     font-size: 1.5rem;
     margin: 1rem 0;
     text-transform: uppercase;
+    min-height: 57px;
   }
   a{
     text-decoration: none;
@@ -94,6 +110,10 @@ footer{
       content: ', ';
       display: inline;
     }
+  }
+  .node__links li {
+    padding: 0;
+    margin: 0;
   }
   .node-readmore {
     text-align: right;
@@ -168,9 +188,7 @@ footer{
     }
   }
 }
-h1{
-  text-align: left!important;
-}
+
 .view-display-id-page_vehicle {
 
   .view-header h2 {
@@ -326,9 +344,71 @@ h1{
   .form--inline{
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+    }
     > .form-item{
       float: none;
       flex: auto;
     }
   }
+}
+
+.region-footer-menu {
+  background: #1b2158;
+  color: #fff;
+  border-top: 10px solid #0dcaf0;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  .menu--social-media {
+    a {
+      color: #0dcaf0;
+      &:before {
+        font-size: 1.5rem;
+      }
+    }
+    span{
+      display: none;
+    }
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  a{
+    text-transform: uppercase;
+  }
+}
+
+.direct-message {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  i {
+    color: #0dcaf0;
+    font-size: 30px;
+    margin: 0 10px;
+  }
+}
+
+
+.breadcrumb {
+  padding: 0 3rem!important;
+  margin-top: 5px;
+}
+
+.title-views {
+    text-transform: uppercase;
+    border-bottom: 4px solid #000;
+    display: inline-block;
+}
+
+.block-block-contentd6292373-6071-4b2a-a20c-3cb1eae5910f{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
 }

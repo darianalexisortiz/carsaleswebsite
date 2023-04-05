@@ -1,0 +1,22 @@
+uuid: 3f8d3c7c-f8d1-44b1-afe2-bac4535513e3
+langcode: es
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: type
+label: Type
+type: 'canonical_entities:taxonomy_term'
+pattern: '/tipo/[term:name]'
+selection_criteria:
+  a4145f3b-a2f2-473d-98e2-f6e88c84dfb4:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: a4145f3b-a2f2-473d-98e2-f6e88c84dfb4
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      vehicle_type: vehicle_type
+selection_logic: and
+weight: -5
+relationships: {  }

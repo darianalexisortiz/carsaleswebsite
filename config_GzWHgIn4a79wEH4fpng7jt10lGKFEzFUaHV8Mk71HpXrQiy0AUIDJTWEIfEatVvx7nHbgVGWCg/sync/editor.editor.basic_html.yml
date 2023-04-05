@@ -1,0 +1,23 @@
+uuid: f6687c87-26f8-4090-a604-1813a45c93dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - ckeditor5
+format: basic_html
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - bold
+      - italic
+      - link
+      - bulletedList
+      - numberedList
+  plugins:
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
+image_upload: {  }

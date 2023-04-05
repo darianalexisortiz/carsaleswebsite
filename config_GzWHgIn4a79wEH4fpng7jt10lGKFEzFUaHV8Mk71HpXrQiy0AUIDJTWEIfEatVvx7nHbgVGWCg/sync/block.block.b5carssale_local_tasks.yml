@@ -1,0 +1,22 @@
+uuid: 879b46a7-c34b-4553-818c-593dd784b0fa
+langcode: es
+status: true
+dependencies:
+  theme:
+    - b5carssale
+_core:
+  default_config_hash: tZxm8vsArGg-_56ZVk2TAj9GAnTFSnuw-ZCXtgbAkBk
+id: b5carssale_local_tasks
+theme: b5carssale
+region: content
+weight: -9
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }
