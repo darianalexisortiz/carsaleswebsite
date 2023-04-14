@@ -20,13 +20,14 @@ h1 {
   color: #1b2158;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 2.6667rem;
+  font-size: 2rem;
   text-transform: uppercase;
   margin-top: 25px;
-  padding-bottom: 16px;
   letter-spacing: 1.6px;
   border-bottom: 2px solid #000;
   display: inline-block;
+  padding: 0 60px 10px;
+  margin-bottom: 20px;
 }
 .bg-dark{
   .container-fluid{
@@ -36,7 +37,6 @@ h1 {
     }
   }
   background-color: $blue!important;
-  border-bottom: 8px #fff solid;
   min-height: 150px;
   a{
     color: #fff;
@@ -100,16 +100,16 @@ footer{
   h2 {
     margin: 1rem 0;
     text-transform: uppercase;
-    min-height: 57px;
+    min-height: 36px;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.6667rem;
+    font-size: 1.25rem;
   }
   a{
     text-decoration: none;
   }
   .content{
     padding: 0 0.8rem;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
   }
   .field--name-field-vehicle-fuel {
     display: inline-block;
@@ -463,15 +463,28 @@ footer{
   height: auto;
 }
 
-.node--type-page {
-  .field--name-body .col {
-    border-right: 2px solid #807b91;
-  }
+.page-node-type-page {
   #block-b5carssale-page-title {
     display: flex;
     justify-content: center;
   }
-  .text-primary{
-    font-size: 1.75rem;
+  .field--name-body {
+    .col {
+      border-right: 2px solid #807b91;
+    }
+    .text-primary {
+      font-size: 1.75rem;
+    }
+    .bg-dark {
+      a {
+        color: #fff;
+        font-weight: 500;
+        font-size: 2rem;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }

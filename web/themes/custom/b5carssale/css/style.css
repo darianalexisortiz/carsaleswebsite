@@ -11741,18 +11741,18 @@ h1, .h1 {
   color: #1b2158;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-size: 2.6667rem;
+  font-size: 2rem;
   text-transform: uppercase;
   margin-top: 25px;
-  padding-bottom: 16px;
   letter-spacing: 1.6px;
   border-bottom: 2px solid #000;
   display: inline-block;
+  padding: 0 60px 10px;
+  margin-bottom: 20px;
 }
 
 .bg-dark {
   background-color: #1b2158 !important;
-  border-bottom: 8px #fff solid;
   min-height: 150px;
 }
 .bg-dark .container-fluid, .bg-dark .container-sm, .bg-dark .container-md, .bg-dark .container-lg, .bg-dark .container-xl, .bg-dark .container-xxl {
@@ -11827,16 +11827,16 @@ footer p a {
 .node--type-vehicle.node--view-mode-teaser h2, .node--type-vehicle.node--view-mode-teaser .h2 {
   margin: 1rem 0;
   text-transform: uppercase;
-  min-height: 57px;
+  min-height: 36px;
   font-family: "Roboto", sans-serif;
-  font-size: 1.6667rem;
+  font-size: 1.25rem;
 }
 .node--type-vehicle.node--view-mode-teaser a {
   text-decoration: none;
 }
 .node--type-vehicle.node--view-mode-teaser .content {
   padding: 0 0.8rem;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
 }
 .node--type-vehicle.node--view-mode-teaser .field--name-field-vehicle-fuel {
   display: inline-block;
@@ -12187,15 +12187,24 @@ footer p a {
   height: auto;
 }
 
-.node--type-page .field--name-body .col {
-  border-right: 2px solid #807b91;
-}
-.node--type-page #block-b5carssale-page-title {
+.page-node-type-page #block-b5carssale-page-title {
   display: flex;
   justify-content: center;
 }
-.node--type-page .text-primary {
+.page-node-type-page .field--name-body .col {
+  border-right: 2px solid #807b91;
+}
+.page-node-type-page .field--name-body .text-primary {
   font-size: 1.75rem;
+}
+.page-node-type-page .field--name-body .bg-dark a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.page-node-type-page .field--name-body .bg-dark a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
