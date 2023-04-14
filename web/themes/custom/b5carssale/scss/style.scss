@@ -123,9 +123,13 @@ footer{
       display: inline;
     }
   }
-  .node__links li {
-    padding: 0;
-    margin: 0;
+  .node__links {
+    display: flex;
+    justify-content: flex-end;
+    li {
+      padding: 0;
+      margin: 0;
+    }
   }
   .node-readmore {
     text-align: right;
@@ -302,6 +306,7 @@ footer{
 
 .contact-blocks {
   padding: 0 5rem !important;
+  border-top: 10px solid #0dcaf0;
   > h2 {
     color: $white;
     text-transform: uppercase;
@@ -437,14 +442,15 @@ footer{
 
 .title-views {
     text-transform: uppercase;
-    border-bottom: 4px solid #000;
+    border-bottom: 2px solid #000;
     display: inline-block;
 }
 
 .block-block-contentd6292373-6071-4b2a-a20c-3cb1eae5910f{
   display: flex;
   justify-content: center;
-  margin: 20px;
+  padding: 20px;
+  background: #fff;
 }
 
 //Contact data
