@@ -22,7 +22,9 @@ h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 2.6667rem;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 25px;
+  padding-bottom: 16px;
+  letter-spacing: 1.6px;
 }
 .bg-dark{
   .container-fluid{
@@ -79,10 +81,10 @@ footer{
   }
   .grid__content {
     padding: 10px 20px;
-    margin: 10px;
   }
   .view-content{
     background: #fff;
+    padding-bottom: 40px;
   }
 }
 
@@ -458,3 +460,4 @@ footer{
   width: 100%;
   height: auto;
 }
+
