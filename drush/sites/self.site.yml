@@ -71,3 +71,7 @@ live:
   uri: mazzuchellirastorza.com.ar
   host: 181.215.134.220
   user: mazzu7941
+  paths:
+    drush-script: '/home/mazzuchellirastorza.com.ar/drush'
+  env-vars:
+    DRUPAL_ENV: live

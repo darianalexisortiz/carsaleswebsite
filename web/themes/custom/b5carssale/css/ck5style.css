@@ -10924,7 +10924,7 @@ a > .ck-content code {
   color: #1b2158;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 2.6667rem;
   text-transform: uppercase;
   margin-top: 20px;
 }
@@ -10996,18 +10996,18 @@ a > .ck-content code {
   padding: 10px;
 }
 .ck-content .node--type-vehicle.node--view-mode-teaser h2, .ck-content .node--type-vehicle.node--view-mode-teaser .h2 {
-  font-size: 1.5rem;
   margin: 1rem 0;
   text-transform: uppercase;
   min-height: 57px;
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6667rem;
 }
 .ck-content .node--type-vehicle.node--view-mode-teaser a {
   text-decoration: none;
 }
 .ck-content .node--type-vehicle.node--view-mode-teaser .content {
   padding: 0 0.8rem;
+  font-size: 1.5rem;
 }
 .ck-content .node--type-vehicle.node--view-mode-teaser .field--name-field-vehicle-fuel {
   display: inline-block;
@@ -11051,11 +11051,12 @@ a > .ck-content code {
 }
 .ck-content .node--type-vehicle.node--view-mode-full .content {
   padding: 3rem 0;
+  font-size: 1.3333rem;
 }
 .ck-content .node--type-vehicle.node--view-mode-full .content h2, .ck-content .node--type-vehicle.node--view-mode-full .content .h2 {
   color: #3DBFF0;
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6667rem;
   margin: 1rem 0;
   text-transform: uppercase;
   margin-top: 0;
@@ -11074,7 +11075,6 @@ a > .ck-content code {
 }
 .ck-content .node--type-vehicle.node--view-mode-full .content .field--name-body .field__label {
   color: #3DBFF0;
-  font-size: 1rem;
   margin: 1rem 0 0;
   text-transform: uppercase;
 }
