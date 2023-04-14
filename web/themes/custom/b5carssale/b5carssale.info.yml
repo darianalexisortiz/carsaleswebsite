@@ -9,7 +9,7 @@ libraries:
 ckeditor_stylesheets:
   - css/style.css
 ckeditor5-stylesheets:
-  - css/ck5style.css
+  - css/style.css
 stylesheets-remove:
   - '@bootstrap5/css/style.css'
 regions:

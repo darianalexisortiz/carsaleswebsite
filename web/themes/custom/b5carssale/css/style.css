@@ -12190,10 +12190,12 @@ footer p a {
 .node--type-page .field--name-body .col {
   border-right: 2px solid #807b91;
 }
-
-#block-b5carssale-page-title {
+.node--type-page #block-b5carssale-page-title {
   display: flex;
   justify-content: center;
+}
+.node--type-page .text-primary {
+  font-size: 1.75rem;
 }
 
 /*# sourceMappingURL=style.css.map */

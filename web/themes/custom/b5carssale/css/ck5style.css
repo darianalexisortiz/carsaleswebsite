@@ -11345,9 +11345,12 @@ a > .ck-content code {
 .ck-content .node--type-page .field--name-body .col {
   border-right: 2px solid #807b91;
 }
-.ck-content #block-b5carssale-page-title {
+.ck-content .node--type-page #block-b5carssale-page-title {
   display: flex;
   justify-content: center;
+}
+.ck-content .node--type-page .text-primary {
+  font-size: 1.75rem;
 }
 
 /*# sourceMappingURL=ck5style.css.map */
