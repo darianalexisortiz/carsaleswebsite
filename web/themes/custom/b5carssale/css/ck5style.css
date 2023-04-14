@@ -11342,7 +11342,7 @@ a > .ck-content code {
   width: 100%;
   height: auto;
 }
-.ck-content .page-node-type-page #block-b5carssale-page-title {
+.ck-content #block-b5carssale-page-title {
   display: flex;
   justify-content: center;
 }

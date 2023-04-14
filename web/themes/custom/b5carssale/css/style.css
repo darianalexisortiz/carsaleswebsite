@@ -12187,10 +12187,11 @@ footer p a {
   height: auto;
 }
 
-.page-node-type-page #block-b5carssale-page-title {
+#block-b5carssale-page-title {
   display: flex;
   justify-content: center;
 }
+
 .page-node-type-page .field--name-body .col {
   border-right: 2px solid #807b91;
 }
