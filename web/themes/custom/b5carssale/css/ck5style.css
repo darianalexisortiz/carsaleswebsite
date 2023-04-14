@@ -11001,6 +11001,8 @@ a > .ck-content code {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  animation: flipInY;
+  animation-duration: 1s;
 }
 .ck-content .node--type-vehicle.node--view-mode-teaser h2, .ck-content .node--type-vehicle.node--view-mode-teaser .h2 {
   margin: 1rem 0;

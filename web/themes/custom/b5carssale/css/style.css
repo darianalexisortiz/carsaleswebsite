@@ -11826,6 +11826,8 @@ footer p a {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  animation: flipInY;
+  animation-duration: 1s;
 }
 .node--type-vehicle.node--view-mode-teaser h2, .node--type-vehicle.node--view-mode-teaser .h2 {
   margin: 1rem 0;

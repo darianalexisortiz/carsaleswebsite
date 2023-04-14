@@ -101,6 +101,10 @@ footer{
   display: flex;
   flex-direction: column;
   padding: 10px;
+  animation: flipInY;
+  animation-duration: 1s;
+
+
   h2 {
     margin: 1rem 0;
     text-transform: uppercase;
