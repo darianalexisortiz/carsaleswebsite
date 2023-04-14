@@ -25,6 +25,7 @@
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
         "drupal/easy_breadcrumb": "^2.0",
+        "drupal/facets": "^3.0@beta",
         "drupal/field_display_label": "^1.3",
         "drupal/field_group": "^3.4",
         "drupal/google_analytics": "^4.0",
@@ -36,6 +37,7 @@
         "drupal/quicklink": "^2.0",
         "drupal/recaptcha_v3": "^1.8",
         "drupal/schema_metatag": "^2.4",
+        "drupal/search_api": "^1.29",
         "drupal/slick": "^2.7",
         "drupal/slick_views": "^2.6",
         "drupal/structure_sync": "^2.0",
@@ -43,7 +45,8 @@
         "drupal/webform": "^6.2@beta",
         "drupal/xmlsitemap": "^1.4",
         "drupal/yearonly": "^9.1",
-        "drupal/yoast_seo": "^1.8"
+        "drupal/yoast_seo": "^1.8",
+        "drush/drush": "^11.5"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -116,8 +119,5 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
-    },
-    "require-dev": {
-        "drush/drush": "^11.5"
     }
 }
