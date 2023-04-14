@@ -25,6 +25,8 @@ h1 {
   margin-top: 25px;
   padding-bottom: 16px;
   letter-spacing: 1.6px;
+  border-bottom: 2px solid #000;
+  display: inline-block;
 }
 .bg-dark{
   .container-fluid{
@@ -461,3 +463,10 @@ footer{
   height: auto;
 }
 
+.node--type-page .field--name-body .col {
+    border-right: 2px solid #807b91;
+}
+#block-b5carssale-page-title {
+  display: flex;
+  justify-content: center;
+}

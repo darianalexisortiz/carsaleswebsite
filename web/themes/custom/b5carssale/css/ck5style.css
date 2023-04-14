@@ -10929,6 +10929,8 @@ a > .ck-content code {
   margin-top: 25px;
   padding-bottom: 16px;
   letter-spacing: 1.6px;
+  border-bottom: 2px solid #000;
+  display: inline-block;
 }
 .ck-content .bg-dark {
   background-color: #1b2158 !important;
@@ -11339,6 +11341,13 @@ a > .ck-content code {
 .ck-content .block-block-contentc9081f0d-7d5a-42b4-80c5-1fe752968568 iframe {
   width: 100%;
   height: auto;
+}
+.ck-content .node--type-page .field--name-body .col {
+  border-right: 2px solid #807b91;
+}
+.ck-content #block-b5carssale-page-title {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=ck5style.css.map */
