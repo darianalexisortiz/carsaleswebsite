@@ -9,6 +9,8 @@ dependencies:
     - taxonomy.vocabulary.vehicle_brand
     - taxonomy.vocabulary.vehicle_condition
     - taxonomy.vocabulary.vehicle_type
+  content:
+    - 'taxonomy_term:vehicle_condition:9a9060c8-0f5b-46e9-9ab6-2bc835794d7d'
   module:
     - better_exposed_filters
     - blazy
@@ -272,7 +274,7 @@ display:
           operator: or
           value: {  }
           group: 1
-          exposed: true
+          exposed: false
           expose:
             operator_id: field_vehicle_condition_target_id_op
             label: Condición
@@ -513,12 +515,281 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  page_news:
+    id: page_news
+    display_title: 'Page news'
+    display_plugin: page
+    position: 1
+    display_options:
+      title: Nuevos
+      sorts:
+        created_1:
+          id: created_1
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: ASC
+          expose:
+            label: 'Fecha de entrada'
+            field_identifier: fecha_de_entrada
+          exposed: false
+          granularity: second
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            vehicle: vehicle
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_vehicle_condition_target_id:
+          id: field_vehicle_condition_target_id
+          table: node__field_vehicle_condition
+          field: field_vehicle_condition_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            2: 2
+          group: 1
+          exposed: false
+          expose:
+            operator_id: field_vehicle_condition_target_id_op
+            label: Condición
+            description: ''
+            use_operator: false
+            operator: field_vehicle_condition_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: condicion
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: vehicle_condition
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        title: false
+        use_ajax: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      use_ajax: true
+      display_description: ''
+      exposed_block: true
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      path: vehiculos/nuevos
+      menu:
+        type: normal
+        title: Vehiculos
+        menu_name: admin
+        parent: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_used:
+    id: page_used
+    display_title: 'Page used'
+    display_plugin: page
+    position: 1
+    display_options:
+      title: Usados
+      sorts:
+        created_1:
+          id: created_1
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: ASC
+          expose:
+            label: 'Fecha de entrada'
+            field_identifier: fecha_de_entrada
+          exposed: false
+          granularity: second
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            vehicle: vehicle
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_vehicle_condition_target_id:
+          id: field_vehicle_condition_target_id
+          table: node__field_vehicle_condition
+          field: field_vehicle_condition_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            2: 2
+          group: 1
+          exposed: false
+          expose:
+            operator_id: field_vehicle_condition_target_id_op
+            label: Condición
+            description: ''
+            use_operator: false
+            operator: field_vehicle_condition_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: condicion
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: vehicle_condition
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        title: false
+        use_ajax: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      use_ajax: true
+      display_description: ''
+      exposed_block: true
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      path: vehiculos/usados
+      menu:
+        type: normal
+        title: Vehiculos
+        menu_name: admin
+        parent: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
   page_vehicle:
     id: page_vehicle
     display_title: Page
     display_plugin: page
     position: 1
     display_options:
+      defaults:
+        use_ajax: false
+      use_ajax: true
       exposed_block: true
       display_extenders:
         metatag_display_extender:

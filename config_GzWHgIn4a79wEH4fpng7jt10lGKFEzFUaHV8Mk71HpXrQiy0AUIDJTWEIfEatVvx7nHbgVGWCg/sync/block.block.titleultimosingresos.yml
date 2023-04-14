@@ -12,7 +12,7 @@ dependencies:
 id: titleultimosingresos
 theme: b5carssale
 region: content
-weight: -5
+weight: -4
 provider: null
 plugin: 'block_content:d6292373-6071-4b2a-a20c-3cb1eae5910f'
 settings:

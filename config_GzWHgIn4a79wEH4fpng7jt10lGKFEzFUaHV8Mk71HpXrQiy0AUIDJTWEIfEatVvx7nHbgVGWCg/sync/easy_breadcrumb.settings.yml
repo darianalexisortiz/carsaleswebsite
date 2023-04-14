@@ -2,7 +2,7 @@ _core:
   default_config_hash: i76EDs9aAKdrR4nZfe_woXsD0yihn4avDej8uClXES8
 langcode: es
 applies_admin_routes: true
-include_invalid_paths: false
+include_invalid_paths: true
 excluded_paths: ''
 replaced_titles: ''
 custom_paths: ''
@@ -11,9 +11,9 @@ alternative_title_field: field_breadcrumb_title
 home_segment_title: Inicio
 home_segment_keep: false
 include_title_segment: true
-title_from_page_when_available: false
+title_from_page_when_available: true
 title_segment_as_link: false
-use_menu_title_as_fallback: false
+use_menu_title_as_fallback: true
 use_page_title_as_menu_title_fallback: false
 menu_title_preferred_menu: main
 remove_repeated_segments: false

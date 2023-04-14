@@ -1,0 +1,7 @@
+uuid: 6291dc69-26fb-4545-8981-2bcebae5bc75
+langcode: es
+status: false
+dependencies: {  }
+formId: node_vehicle_form
+captchaType: default
+label: node_vehicle_form
