@@ -11930,7 +11930,7 @@ footer p a {
   color: #fff;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1.6667rem;
 }
 .node--type-vehicle.node--view-mode-full .form h2::after, .node--type-vehicle.node--view-mode-full .form .h2::after {
   border-bottom: 1px solid #fff;
