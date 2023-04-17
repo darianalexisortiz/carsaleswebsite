@@ -34,6 +34,7 @@ h1 {
   animation-duration: 1s;
 }
 .bg-dark{
+  animation: slide-bottom 0.4s linear both;
   .container-fluid{
     padding: 0 0.5rem !important;
     @include media-breakpoint-up(md) {
@@ -167,11 +168,11 @@ footer{
 
   .content{
     padding: 3rem 0 ;
-    font-size: 1.3333rem;
+    font-size: 1rem;
     h2 {
       color: $cyan;
       font-family: 'Roboto', sans-serif;
-      font-size: 1.6667rem;
+      font-size: 1.2rem;
       margin: 1rem 0;
       text-transform: uppercase;
       margin-top: 0;
@@ -517,4 +518,14 @@ footer{
   padding: 120px 0;
   text-align: center;
   font-size: 2rem;
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-100px)
+  }
+
+  100% {
+    transform: translateY(0px)
+  }
 }

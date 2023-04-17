@@ -10937,6 +10937,7 @@ a > .ck-content code {
   animation-duration: 1s;
 }
 .ck-content .bg-dark {
+  animation: slide-bottom 0.4s linear both;
   background-color: #1b2158 !important;
   min-height: 150px;
 }
@@ -11386,6 +11387,14 @@ a > .ck-content code {
   padding: 120px 0;
   text-align: center;
   font-size: 2rem;
+}
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /*# sourceMappingURL=ck5style.css.map */
