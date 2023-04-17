@@ -11065,12 +11065,12 @@ a > .ck-content code {
 }
 .ck-content .node--type-vehicle.node--view-mode-full .content {
   padding: 3rem 0;
-  font-size: 1.3333rem;
+  font-size: 1rem;
 }
 .ck-content .node--type-vehicle.node--view-mode-full .content h2, .ck-content .node--type-vehicle.node--view-mode-full .content .h2 {
   color: #3DBFF0;
   font-family: "Roboto", sans-serif;
-  font-size: 1.6667rem;
+  font-size: 1.2rem;
   margin: 1rem 0;
   text-transform: uppercase;
   margin-top: 0;
