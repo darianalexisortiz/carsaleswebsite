@@ -7,7 +7,6 @@ use Drupal\Component\Utility\NestedArray;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Link;
 use Drupal\Core\Plugin\PluginBase;
-use Drupal\Core\Url;
 use Drupal\facets\FacetInterface;
 use Drupal\facets\Result\Result;
 use Drupal\facets\Result\ResultInterface;
@@ -67,7 +66,6 @@ abstract class WidgetPluginBase extends PluginBase implements WidgetPluginInterf
         'data-drupal-facet-filter-key' => $url_processor->getFilterKey(),
         'data-drupal-facet-id' => $facet->id(),
         'data-drupal-facet-alias' => $facet->getUrlAlias(),
-        'data-drupal-facet-ajax' => '0',
         'class' => [$facet->getActiveItems() ? 'facet-active' : 'facet-inactive'],
       ],
       '#context' => !empty($widget['type']) ? ['list_style' => $widget['type']] : [],
@@ -197,7 +195,6 @@ abstract class WidgetPluginBase extends PluginBase implements WidgetPluginInterf
     $items['#attributes']['data-drupal-facet-item-value'] = $result->getRawValue();
     $items['#attributes']['data-drupal-facet-item-count'] = $result->getCount();
     $items['#attributes']['data-drupal-facet-filter-value'] = $facet->getUrlAlias() . $url_processor->getSeparator() . $result->getRawValue();
-    $items['#attributes']['data-drupal-facet-ajax'] = '0';
 
     if ($facet->getShowOnlyOneResult()) {
       $items['#attributes']['data-drupal-facet-single-selection-group'] = Html::getClass($facet->getUrlAlias());

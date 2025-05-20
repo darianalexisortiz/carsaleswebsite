@@ -7,7 +7,7 @@ use Drupal\Core\Cache\Context\CalculatedCacheContextInterface;
 use Drupal\Core\Cache\Context\RequestStackCacheContextBase;
 
 /**
- * Defines the FacetsAjaxArgsCacheContext service, for per facets args caching.
+ * Defines the FacetsFilterCacheContext service, for per facets args caching.
  *
  * Cache context ID: 'facets_filter' (to vary by all request arguments).
  * Calculated cache context ID: 'facets_filter:%key', e.g.'facets_filter:f'
@@ -33,7 +33,7 @@ class FacetsFilterCacheContext extends RequestStackCacheContextBase implements C
       return http_build_query($value);
     }
     elseif ($this->requestStack->getCurrentRequest()->request->has($arg)) {
-      $value = $this->requestStack->getCurrentRequest()->request->get($arg);
+      $value = $this->requestStack->getCurrentRequest()->request->all()[$arg] ?? NULL;
       if (is_array($value)) {
         return http_build_query($value);
       }

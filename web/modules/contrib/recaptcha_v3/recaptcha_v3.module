@@ -195,11 +195,16 @@ function recaptcha_v3_post_captcha_element_process(array &$element, FormStateInt
       $element['#captcha_validate'] = 'recaptcha_v3_validate';
     }
   }
-  // Hide description for the recaptcha v3 captcha element.
-  if (!empty($element['captcha_widgets']['captcha_response']['#recaptcha_v3'])) {
-    unset($element['#description'], $element['#attributes']['aria-describedby']);
-  }
   return $element;
+}
+
+/**
+ * Unset captcha title and description if recaptcha v3 element.
+ */
+function recaptcha_v3_preprocess_captcha(&$variables, $hook, $info) {
+  if (!empty($variables['element']['captcha_widgets']['captcha_response']['#recaptcha_v3'])) {
+    unset($variables['title'], $variables['description']);
+  }
 }
 
 /**

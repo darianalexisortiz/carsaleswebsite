@@ -12,7 +12,7 @@ module.exports = {
   '@tags': ['quicklink'],
   before: function (browser) {
     browser.drupalInstall({
-      setupFile: 'modules/contrib/quicklink/tests/src/Nightwatch/TestSiteInstallTestScript.php',
+      setupFile: `${__dirname}/../TestSiteInstallTestScript.php`,
     });
   },
   after: function (browser) {
@@ -121,7 +121,7 @@ module.exports = {
       )
 
       // Verify polyfill is not loaded.
-      .assert.not.elementPresent('script[src*="polyfill.io"][src*="IntersectionObserver"]');
+      .assert.not.elementPresent('script[src*="polyfill-fastly.io"][src*="IntersectionObserver"]');
   },
   'Change and then verify updated settings': (browser) => {
     browser
@@ -240,7 +240,7 @@ module.exports = {
       .waitForElementVisible('body')
 
       // Verify polyfill is loaded.
-      .assert.elementPresent('script[src*="polyfill.io"][src*="IntersectionObserver"]')
+      .assert.elementPresent('script[src*="polyfill-fastly.io"][src*="IntersectionObserver"]')
 
       // Verify that links within admin containers are now prefetched.
       .assert.not.elementIgnored('<div id="block-local-tasks-block"><a href="/test">test</a></div>')

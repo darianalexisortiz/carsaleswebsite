@@ -2,7 +2,7 @@
 
 namespace Drupal\Tests\webform\Functional;
 
-use Drupal\Component\Render\FormattableMarkup;
+use Drupal\Component\Utility\DeprecationHelper;
 use Drupal\user\Entity\User;
 use Drupal\webform\Entity\Webform;
 use Drupal\webform\Entity\WebformSubmission;
@@ -19,7 +19,7 @@ class WebformSubmissionViewTest extends WebformBrowserTestBase {
    *
    * @var array
    */
-  protected static $modules = [ 'node', 'webform'];
+  protected static $modules = ['node', 'webform'];
 
   /**
    * Webforms to load.
@@ -92,7 +92,12 @@ class WebformSubmissionViewTest extends WebformBrowserTestBase {
     }
 
     // Check details element.
-    $assert_session->responseContains('<summary role="button" aria-controls="test_element--standard_elements" aria-expanded="true" aria-pressed="true">Standard Elements</summary>');
+    DeprecationHelper::backwardsCompatibleCall(
+      currentVersion: \Drupal::VERSION,
+      deprecatedVersion: '10.3',
+      currentCallable: fn() => $assert_session->responseContains('<summary role="button" aria-controls="test_element--standard_elements" aria-expanded="true">Standard Elements</summary>'),
+      deprecatedCallable: fn() => $assert_session->responseContains('<summary role="button" aria-controls="test_element--standard_elements" aria-expanded="true" aria-pressed="true">Standard Elements</summary>'),
+    );
 
     // Check empty details element removed.
     $assert_session->responseNotContains('Markup Elements');

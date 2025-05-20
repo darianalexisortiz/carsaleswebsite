@@ -8,3 +8,11 @@ field.field_settings.yearonly:
     yearonly_to:
       type: string
       label: 'End year'
+
+field.widget.settings.yearonly_default:
+  type: mapping
+  label: 'Year Only select list widget settings'
+  mapping:
+    sort_order:
+      type: string
+      label: 'Sort order'

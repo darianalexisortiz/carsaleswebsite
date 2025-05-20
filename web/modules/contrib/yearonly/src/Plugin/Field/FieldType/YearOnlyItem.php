@@ -12,11 +12,15 @@ use Drupal\Core\Field\FieldItemInterface;
  * Plugin implementation of the 'yearonly' field type.
  *
  * @FieldType(
- * id = "yearonly",
- * label = @Translation("Year only"),
- * description = @Translation("This field provide the ways to collect year only in provided date range."),
- * default_widget = "yearonly_default",
- * default_formatter = "yearonly_default",
+ *   id = "yearonly",
+ *   label = @Translation("Year only"),
+ *   category = "date_time",
+ *   description = {
+ *     @Translation("Collect and store only the year portion of a date"),
+ *     @Translation("Define a range of valid year values"),
+ *   },
+ *   default_widget = "yearonly_default",
+ *   default_formatter = "yearonly_default",
  * )
  */
 class YearOnlyItem extends FieldItemBase implements FieldItemInterface {

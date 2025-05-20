@@ -10,8 +10,8 @@ or this theme's _variables_drupal.scss and recompile css!)
 
 ## FEATURES
 
-* Bootstrap 5 library ([5.2.3](https://blog.getbootstrap.com/2022/11/22/bootstrap-5-2-3/)
-  and [5.1.3](https://blog.getbootstrap.com/2021/10/05/bootstrap-5-1-2/)) included
+* Bootstrap 5 library ([5.3.3](https://blog.getbootstrap.com/2024/02/20/bootstrap-5-3-3/)
+  and [5.2.3](https://blog.getbootstrap.com/2022/11/22/bootstrap-5-2-3/)) included
 * Bootstrap 5 breakpoints
 * Bootstrap 5 integration with CKEditor
 * Bootstrap 5 configuration within admin user interface
@@ -42,6 +42,12 @@ Head to `Appearance` and clicking bootstrap5 `settings`.
 
 ### Subtheme
 
+#### Create a sub-theme using Drush
+
+* `drush --include="web/themes/contrib/bootstrap5/src/Drush" bootstrap5:subtheme MACHINE_NAME --subtheme-name="SUBTHEME_NAME"`
+
+#### Create a sub-theme manually
+
 * Enable theme.
 * Head to `/admin/appearance/settings/bootstrap5`.
 * Scroll down to `Subtheme` section.
@@ -53,6 +59,7 @@ Head to `Appearance` and clicking bootstrap5 `settings`.
 - To lint SASS files run `npm run lint:sass` (it will fail build if lint fails)
 - To lint JS files run `npm run lint:js` (it will fail build if lint fails)
 - To compile SASS run `sass scss/style.scss css/style.css` (requires [SASS compiler](https://sass-lang.com/install))
+- To compile SASS for CKEditor5 run `sass scss/ck5style.scss css/ck5style.css`
 - To compile JS: run `npm run build:js`
 - optional: create symlink from bootstrap5 repo folder to a local Drupal installation to simplify
   development `ln -s /path/to/bootstrap5 /path/to/local-drupal-site/web/themes/contrib`
@@ -70,6 +77,10 @@ It will uninstall old themes (if present) and enable `stable9`.
 If your installation is config driven, don't forget to switch `stable` and `claro` to `stable9`.
 
 ## FAQ
+
+### FAQ - Adding custom color
+
+* Adding custom color to theme: adding (code snippet)[https://getbootstrap.com/docs/5.3/customize/sass/#add-to-map] to `scss/_variables_bootstrap.scss`.
 
 ### FAQ - Menu subnesting
 

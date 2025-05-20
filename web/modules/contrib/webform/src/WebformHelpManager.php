@@ -6,15 +6,15 @@
 namespace Drupal\webform;
 
 use Drupal\Component\Utility\Xss;
-use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Config\ConfigFactoryInterface;
+use Drupal\Core\Extension\ModuleHandlerInterface;
+use Drupal\Core\Path\PathMatcherInterface;
 use Drupal\Core\Render\Markup;
+use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Serialization\Yaml;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\State\StateInterface;
-use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
-use Drupal\Core\Path\PathMatcherInterface;
 use Drupal\Core\Url;
 use Drupal\webform\Element\WebformMessage;
 use Drupal\webform\Plugin\WebformElementManagerInterface;
@@ -1177,7 +1177,7 @@ class WebformHelpManager implements WebformHelpManagerInterface {
           ],
           [
             'title' => $this->t('Display forms in a modal dialog with Drupal 8 | Agaric'),
-            'url' => 'http://agaric.com/blogs/display-forms-modal-dialog-drupal-8',
+            'url' => 'https://agaric.com/blogs/display-forms-modal-dialog-drupal-8',
           ],
           [
             'title' => $this->t('jQueryUI Dialog Documentation'),
@@ -1582,13 +1582,13 @@ class WebformHelpManager implements WebformHelpManagerInterface {
     // Promotions: Webform.
     $t_args = [
       ':href_involved' => 'https://www.drupal.org/getting-involved',
+      ':href_join' => 'https://www.drupal.org/association',
       ':href_opencollective' => 'https://opencollective.com/webform',
-      ':href_support' => 'https://www.jrockowitz.com',
     ];
     $help['promotion_webform'] = [
       'group' => 'promotions',
       'title' => $this->t('Promotions: Drupal Association'),
-      'content' => $this->t('If you enjoy and value Drupal and the Webform module consider <a href=":href_involved">getting involved in the Drupal community</a>, <a href=":href_opencollective">contributing funds to the Webform module\'s Open Collective</a>, and <a href=":href_support">hiring professional support</a>.', $t_args),
+      'content' => $this->t('If you enjoy and value Drupal and the Webform module consider <a href=":href_involved">getting involved in the Drupal community</a>, <a href=":href_join">joining the Drupal Association</a>, and <a href=":href_opencollective">contributing funds to the Webform module\'s Open Collective</a>.', $t_args),
       'message_type' => 'webform',
       'message_close' => TRUE,
       'message_storage' => WebformMessage::STORAGE_STATE,
@@ -1640,7 +1640,7 @@ class WebformHelpManager implements WebformHelpManagerInterface {
     $help['webforms_manage'] = [
       'group' => 'forms',
       'title' => $this->t('Forms'),
-      'content' => $this->t('The <strong>Forms</strong> management page lists all available webforms, which can be filtered by the following: title, description, elements, category and status.'),
+      'content' => $this->t('The <strong>Forms</strong> management page lists all available webforms, which can be filtered by the following: keyword (including title, description, elements, user name, or role), category, and status.'),
       'video_id' => 'forms',
       'routes' => [
         // @see /admin/structure/webform

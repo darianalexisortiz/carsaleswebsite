@@ -431,37 +431,30 @@ class DefaultFacetManager {
     // settings.
     if (empty($built_facet->getResults())) {
       $empty_behavior = $built_facet->getEmptyBehavior();
-      if ($empty_behavior && $empty_behavior['behavior'] === 'text') {
-        return [
-          [
-            0 => $build,
-            '#type' => 'container',
-            '#attributes' => [
-              'data-drupal-facet-id' => $built_facet->id(),
-              'class' => ['facet-empty'],
+      switch ($empty_behavior['behavior'] ?? '') {
+        case 'text':
+          return [
+            [
+              0 => $build,
+              '#type' => 'container',
+              '#attributes' => [
+                'data-drupal-facet-id' => $built_facet->id(),
+                'class' => ['facet-empty'],
+              ],
+              'empty_text' => [
+                // @codingStandardsIgnoreStart
+                '#markup' => $this->t($empty_behavior['text']),
+                // @codingStandardsIgnoreEnd
+              ],
             ],
-            'empty_text' => [
-              // @codingStandardsIgnoreStart
-              '#markup' => $this->t($empty_behavior['text']),
-              // @codingStandardsIgnoreEnd
-            ],
-          ],
-        ];
-      }
-      else {
-        // If the facet has no results, but it is being rendered trough AJAX it
-        // should render an empty container. This is because the JavaScript
-        // needs to be able to find a div to replace with the new content.
-        return [
-          [
-            0 => $build,
-            '#type' => 'container',
-            '#attributes' => [
-              'data-drupal-facet-id' => $built_facet->id(),
-              'class' => ['facet-empty', 'facet-hidden'],
-            ],
-          ],
-        ];
+          ];
+
+        case 'none':
+          return [];
+
+        case 'empty':
+        default:
+          return [$build];
       }
     }
 

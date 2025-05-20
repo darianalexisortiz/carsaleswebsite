@@ -16,7 +16,7 @@ base_field: uid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: 'Por defecto'
     display_plugin: default
     position: 0
     display_options:
@@ -877,7 +877,7 @@ display:
       show_admin_links: true
       use_more: false
       use_more_always: false
-      use_more_text: more
+      use_more_text: más
       link_display: page_1
       link_url: ''
       display_comment: ''

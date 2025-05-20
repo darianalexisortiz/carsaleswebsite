@@ -303,7 +303,7 @@ class DefaultFacetManagerTest extends EntityKernelTestBase {
    *
    * @see ::testBuildCacheabilityMetadata
    */
-  public function buildCacheabilityMetadataProvider() {
+  public static function buildCacheabilityMetadataProvider() {
     $basic = [
       'contexts' => [
         // Facet API uses Request query params to populate active facets values.
@@ -336,6 +336,7 @@ class DefaultFacetManagerTest extends EntityKernelTestBase {
         // Added by views view source plugin.
         'config:views.view.search_api_test_view',
         'config:search_api.index.database_search_index',
+        'search_api_list:database_search_index',
       ],
     ];
     return [
@@ -348,15 +349,7 @@ class DefaultFacetManagerTest extends EntityKernelTestBase {
       // strategy.
       [
         'search_api:views_page__search_api_test_view__page_2_sapi_tag',
-        array_merge_recursive(
-          $basic,
-          [
-            'tags' => [
-              'search_api_list:database_search_index',
-            ],
-            'max-age' => Cache::PERMANENT,
-          ]
-        ),
+        $basic + ['max-age' => Cache::PERMANENT],
       ],
       // Expected cacheability for the facet with a source that has TIME cache
       // strategy.

@@ -3,6 +3,7 @@
 namespace Drupal\facets_summary\Entity;
 
 use Drupal\Core\Config\Entity\ConfigEntityBase;
+use Drupal\facets\Entity\Facet;
 use Drupal\facets_summary\FacetsSummaryInterface;
 
 /**
@@ -314,6 +315,11 @@ class FacetsSummary extends ConfigEntityBase implements FacetsSummaryInterface {
     $facet_source_dependencies = $this->getFacetSource()->calculateDependencies();
     if (!empty($facet_source_dependencies)) {
       $this->addDependencies($facet_source_dependencies);
+    }
+
+    foreach (array_keys($this->getFacets() ?? []) as $facet_id) {
+      $facet = Facet::load($facet_id);
+      $this->addDependency('config', $facet->getConfigDependencyName());
     }
 
     return $this;

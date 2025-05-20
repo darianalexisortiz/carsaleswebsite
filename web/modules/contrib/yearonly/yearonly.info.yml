@@ -2,9 +2,9 @@ name: Year Only
 type: module
 description: Provide field to collect year only.
 package: Field types
-core_version_requirement: ^8 || ^9 || ^10
+core_version_requirement: ^8.8 || ^9 || ^10 || ^11
 
-# Information added by Drupal.org packaging script on 2022-12-09
-version: '9.1.0'
+# Information added by Drupal.org packaging script on 2024-07-30
+version: '9.1.2'
 project: 'yearonly'
-datestamp: 1670608556
+datestamp: 1722356673

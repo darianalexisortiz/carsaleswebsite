@@ -89,7 +89,7 @@ class QueryString extends UrlProcessorPluginBase {
     // When adding/removing a filter the number of pages may have changed,
     // possibly resulting in an invalid page parameter.
     if ($get_params->has('page')) {
-      $current_page = $get_params->get('page');
+      $current_page = $get_params->all()['page'];
       $get_params->remove('page');
     }
 
@@ -331,6 +331,11 @@ class QueryString extends UrlProcessorPluginBase {
     $active_filters = [];
     // Explode the active params on the separator.
     foreach ($active_params as $param) {
+      // Skip invalid user input.
+      if (!is_string($param)) {
+        continue;
+      }
+
       $explosion = explode($this->getSeparator(), $param);
       $url_alias = array_shift($explosion);
       if ($facet_id = $this->getFacetIdByUrlAlias($url_alias, $facet_source_id)) {

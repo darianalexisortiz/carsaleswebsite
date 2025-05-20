@@ -1164,9 +1164,7 @@ class OptionsLimitWebformHandler extends WebformHandlerBase implements WebformOp
    *   including the option's limit, total, remaining, and status.
    */
   protected function getOptionsLimits(array $values = []) {
-    $default_limit = isset($this->configuration['limits'][WebformOptionsLimitHandlerInterface::DEFAULT_LIMIT])
-      ? $this->configuration['limits'][WebformOptionsLimitHandlerInterface::DEFAULT_LIMIT]
-      : NULL;
+    $default_limit = $this->configuration['limits'][WebformOptionsLimitHandlerInterface::DEFAULT_LIMIT] ?? NULL;
 
     $totals = $this->getOptionsTotals($values);
 
@@ -1257,6 +1255,10 @@ class OptionsLimitWebformHandler extends WebformHandlerBase implements WebformOp
   protected function getOptionsReached(array $limits) {
     $element_key = $this->configuration['element_key'];
     $webform_submission = $this->getWebformSubmission();
+    if (!$webform_submission) {
+      return [];
+    }
+
     $element_values = (array) $webform_submission->getElementOriginalData($element_key) ?: [];
     $reached = [];
     foreach ($limits as $option_value => $limit) {
@@ -1296,7 +1298,7 @@ class OptionsLimitWebformHandler extends WebformHandlerBase implements WebformOp
   /**
    * Get boolean submission total for the current webform and source entity.
    *
-   * @return int
+   * @return int|null
    *   Boolean totals.
    */
   protected function getBooleanTotal() {

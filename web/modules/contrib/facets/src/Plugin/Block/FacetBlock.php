@@ -91,14 +91,7 @@ class FacetBlock extends BlockBase implements ContainerFactoryPluginInterface {
     $build = $this->facetManager->build($facet);
 
     if (!empty($build)) {
-      CacheableMetadata::createFromObject($this)->applyTo($build);
-
-      // Add extra elements from facet source, for example, ajax scripts.
-      // @see Drupal\facets\Plugin\facets\facet_source\SearchApiDisplay
-      /** @var \Drupal\facets\FacetSource\FacetSourcePluginInterface $facet_source */
-      $facet_source = $facet->getFacetSource();
-
-      // Add contextual links only when we have results.
+      // Add contextual links only when the facet gets rendered.
       $build['#contextual_links']['facets_facet'] = [
         'route_parameters' => ['facets_facet' => $facet->id()],
       ];
@@ -110,6 +103,9 @@ class FacetBlock extends BlockBase implements ContainerFactoryPluginInterface {
         $build['#attributes']['class'][] = 'facet-inactive';
       }
     }
+
+    // Even empty facet results should be cached.
+    CacheableMetadata::createFromObject($this)->applyTo($build);
 
     return $build;
   }
@@ -176,9 +172,8 @@ class FacetBlock extends BlockBase implements ContainerFactoryPluginInterface {
   }
 
   /**
-   * {@inheritDoc}
+   * Allow to render facet block if one of the following conditions are met.
    *
-   * Allow to render facet block if one of the following conditions are met:
    * - facet is allowed to be displayed regardless of the source visibility
    * - facet source is rendered in the same request as facet.
    */

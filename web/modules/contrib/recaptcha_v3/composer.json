@@ -6,6 +6,6 @@
   "minimum-stability": "dev",
   "require": {
     "google/recaptcha": "^1.2",
-    "drupal/captcha": "^1.0.0-beta4"
+    "drupal/captcha": "^1.11"
   }
 }

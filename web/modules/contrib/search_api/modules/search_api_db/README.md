@@ -7,9 +7,8 @@ when creating a new server.
 All Search API data types are supported by using appropriate SQL data types for
 their respective columns.
 
-The "direct" parse mode for queries will result in a simple splitting of the
-query string into keys. Additionally, search keys containing whitespace will be
-split for all parse modes, as searching for phrases is currently not supported.
+Simple 2-word phrase searching is supported by surrounding the keywords in
+double quotes.
 
 ## Supported optional features
 
@@ -31,7 +30,8 @@ split for all parse modes, as searching for phrases is currently not supported.
 [facets]: https://www.drupal.org/project/facets
 
 If you feel some backend option is missing, or have other ideas for improving
-this implementation, please file a feature request in the project's [issue queue], using the "Database search" component.
+this implementation, file a feature request in the project's [issue queue],
+using the “Database search” component.
 
 [issue queue]: https://www.drupal.org/project/issues/search_api
 

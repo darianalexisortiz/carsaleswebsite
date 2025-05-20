@@ -2,8 +2,6 @@
 
 namespace Drupal\Tests\webform\Functional\Element;
 
-use Drupal\Core\Extension\ExtensionNameLengthException;
-
 /**
  * Tests for telephone element.
  *
@@ -11,14 +9,12 @@ use Drupal\Core\Extension\ExtensionNameLengthException;
  */
 class WebformElementTelephoneTest extends WebformElementBrowserTestBase {
 
-
   /**
    * Modules to enable.
    *
    * @var array
    */
-  protected static $modules = ['webform'];
-  // protected static $modules = ['webform', 'telephone_validation'];
+  protected static $modules = ['webform', 'telephone_validation'];
 
   /**
    * Webforms to load.
@@ -26,22 +22,6 @@ class WebformElementTelephoneTest extends WebformElementBrowserTestBase {
    * @var array
    */
   protected static $testWebforms = ['test_element_telephone'];
-
-  /**
-   * {@inheritdoc}
-   */
-  protected function setUp(): void {
-    parent::setUp();
-
-    try {
-      /** @var \Drupal\Core\Extension\ModuleInstallerInterface $module_installer */
-      $module_installer = \Drupal::service('module_installer');
-      $module_installer->install(['telephone_validation']);
-    }
-    catch (\Exception $exception) {
-      // Do nothing.
-    }
-  }
 
   /**
    * Test telephone element.
@@ -57,7 +37,7 @@ class WebformElementTelephoneTest extends WebformElementBrowserTestBase {
     // Check international tel.
     $assert_session->responseContains('<input class="js-webform-telephone-international webform-webform-telephone-international form-tel" data-drupal-selector="edit-tel-international" type="tel" id="edit-tel-international" name="tel_international" value="" size="30" maxlength="128" />');
 
-    // Check international telephone valddation.
+    // Check international telephone validation.
     $assert_session->responseContains('<input data-drupal-selector="edit-tel-validation-e164" type="tel" id="edit-tel-validation-e164" name="tel_validation_e164" value="" size="30" maxlength="128" class="form-tel" />');
 
     // Check USE telephone validation.

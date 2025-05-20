@@ -24,7 +24,7 @@
     // Create a div with link but don't attach it to the page.
     var $div = $('<div><a href="' + url + '" class="webform-dialog ' + type + '"></a></div>');
     // Init the webform dialog behavior.
-    Drupal.behaviors.webformDialog.attach($div);
+    Drupal.behaviors.webformDialog.attach($div.get(0));
     // Trigger the link.
     $div.find('a').trigger('click');
   };
@@ -80,7 +80,7 @@
         var element_settings = {};
         element_settings.progress = {type: 'fullscreen'};
         element_settings.url = href;
-        element_settings.event = 'click';
+        element_settings.event = 'touchstart click';
         element_settings.dialogType = $a.data('dialog-type') || 'modal';
         element_settings.dialog = options;
         element_settings.element = this;
