@@ -230,6 +230,11 @@ footer{
   }
 }
 
+.path-user .user-login-form, .path-user .user-pass {
+  width: 30%;
+  margin: 0 auto;
+}
+
 .view-display-id-page_vehicle {
 
   .view-header h2 {
@@ -264,7 +269,7 @@ footer{
 .slick-arrow::before, .slick-arrow::after {
   color: #fff;
 }
-.form-item-sort-by .form-select {
+/* .form-item-sort-by .form-select {
   border: 0;
   background: transparent;
   padding: 0;
@@ -306,7 +311,7 @@ footer{
     background-position: right 0.75rem center;
     background-size: 16px 12px;
   }
-}
+} */
 
 .menu--social-media .navbar-nav{
   display: flex;

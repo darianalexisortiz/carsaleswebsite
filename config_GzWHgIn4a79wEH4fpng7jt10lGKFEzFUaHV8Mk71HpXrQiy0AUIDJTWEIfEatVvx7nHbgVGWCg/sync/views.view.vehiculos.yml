@@ -123,7 +123,7 @@ display:
               secondary_open: false
               reset_button_always_show: false
             sort:
-              plugin_id: bef_links
+              plugin_id: default
               advanced:
                 combine: false
                 combine_rewrite: ''
@@ -141,8 +141,8 @@ display:
                     filter_rewrite_values: ''
                     filter_rewrite_values_key: false
                   collapsible: false
-                  is_secondary: false
                   collapsible_disable_automatic_open: false
+                  is_secondary: false
               field_vehicle_brand_target_id:
                 plugin_id: default
                 advanced:
@@ -151,8 +151,8 @@ display:
                     filter_rewrite_values: ''
                     filter_rewrite_values_key: false
                   collapsible: false
-                  is_secondary: false
                   collapsible_disable_automatic_open: false
+                  is_secondary: false
               field_vehicle_type_target_id:
                 plugin_id: default
                 advanced:
@@ -161,8 +161,8 @@ display:
                     filter_rewrite_values: ''
                     filter_rewrite_values_key: false
                   collapsible: false
-                  is_secondary: false
                   collapsible_disable_automatic_open: false
+                  is_secondary: false
       access:
         type: perm
         options:
@@ -226,19 +226,6 @@ display:
           expose:
             label: Kilómetros
             field_identifier: kilometros
-          exposed: true
-        field_vehicle_price_value:
-          id: field_vehicle_price_value
-          table: node__field_vehicle_price
-          field: field_vehicle_price_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: standard
-          order: ASC
-          expose:
-            label: Precio
-            field_identifier: precio
           exposed: true
       arguments: {  }
       filters:
@@ -414,10 +401,10 @@ display:
       style:
         type: blazy
         options:
-          style: nativegrid
           grid: '3'
           grid_medium: '2'
           grid_small: '1'
+          style: nativegrid
       row:
         type: 'entity:node'
         options:

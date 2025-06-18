@@ -18,16 +18,16 @@
 /vendor/
 
 # Ignore configuration files that may contain sensitive information.
-/web/sites/*/settings*.php
-/web/sites/*/settings.local.php
-/web/sites/*/services*.yml
+/public_html/sites/*/settings*.php
+/public_html/*/settings.local.php
+/public_html/sites/*/services*.yml
 
 # Ignore paths that contain user-generated content.
-/web/sites/*/files
-/web/sites/*/private
+/public_html/sites/*/files
+/public_html/sites/*/private
 
 # Ignore multi-site test environment.
-/web/sites/simpletest
+/public_html/sites/simpletest
 
 # If you prefer to store your .gitignore file in the sites/ folder, comment
 # or delete the previous settings and uncomment the following ones, instead.
@@ -64,7 +64,6 @@ logs
 mail
 perl5
 public_ftp
-public_html
 public_html_11
 public_html~
 ssl
@@ -80,3 +79,13 @@ tmp
 .wp-toolkit-identifier
 access-logs
 www
+.bash_history
+.imunify_patch_id
+.myimunify_id
+error_log
+public_html_obsolete
+.cache
+.config
+.local
+*.sql
+*.sql.gz

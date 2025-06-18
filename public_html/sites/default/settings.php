@@ -812,6 +812,23 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #
 $settings['config_sync_directory'] = '../config_GzWHgIn4a79wEH4fpng7jt10lGKFEzFUaHV8Mk71HpXrQiy0AUIDJTWEIfEatVvx7nHbgVGWCg/sync';
 
+$databases['default']['default'] = array (
+  'database' => 'mazzuchelli_db',
+  'username' => 'mazzuchelli_db',
+  'password' => ')pBXS7(31e',
+  'prefix' => '',
+  'host' => '10.0.10.27',
+  'port' => '3306',
+  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
+  'driver' => 'mysql',
+  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+);
+
+$settings['trusted_host_patterns'] = [
+  '^mazzuchelliautomotores\.com\.ar$',
+  '^.+\.mazzuchelliautomotores\.com\.ar$',
+];
+
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
