@@ -36,6 +36,7 @@
         "drupal/pathauto": "^1.11",
         "drupal/quicklink": "^2.0",
         "drupal/recaptcha_v3": "^1.8",
+        "drupal/redirect_after_login": "^3.0",
         "drupal/schema_metatag": "^2.4",
         "drupal/search_api": "^1.29",
         "drupal/slick": "^2.7",

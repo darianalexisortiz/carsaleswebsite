@@ -70,6 +70,7 @@ module:
   phpass: 0
   quicklink: 0
   recaptcha_v3: 0
+  redirect_after_login: 0
   responsive_image: 0
   schema_article: 0
   schema_metatag: 0
